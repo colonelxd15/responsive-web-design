@@ -1,0 +1,322 @@
+#featured-works{
+	position: relative;
+	background: #F7F7F7;
+}
+#about-section{
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+#costum-cont{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.cont-bg{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	.cont-bg-2{
+		height: 40%;
+		width: 80%;
+		left: 10%;
+		bottom: -40%;
+	}
+	.cont-bg-3{
+		height: 50%;
+		width: 50%;
+		left: 25%;
+		bottom: -50%;
+	}
+	.cont-bg-2, .cont-bg-3{
+		position: absolute;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+.pos-abs{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 140px;
+	.header1{
+		margin: 20px 0px;
+	}
+}
+
+#team{
+	background: #F7F7F7;
+	position: relative;
+	padding: 50px 0px 85px;
+	.team-prof{
+		width: 255px;
+		height: 416px;
+		.team-prof-pic,
+		.profile{
+			position: relative;
+		}
+		.team-prof-pic{
+			height: 213px;
+			width: 255px;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+			.team-prof-overlay{
+				height: 213px;
+				width: 255px;
+				background: #000;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				.email{
+					background-repeat: no-repeat;
+					background: url('../resources/icons/color-icons.png') 0px -44px;
+					height: 44px;
+					width: 44px;
+					top: 0px;
+					left: 103px;
+				}
+				.email-add{
+					font-family: 'Open Sans',sans-serif;
+					font-size: 15px;
+					letter-spacing: 1px;
+					font-weight: 400;
+					color: #FFF;
+					text-align: center;
+					bottom: 0px;
+					text-align: center;
+					width: 100%;
+				}
+				img,.email,.email-add{
+					position: absolute;
+				}
+			}
+			
+		}
+		&:last-child{
+			margin-right: 0px;
+		}
+	.profile{
+		background: #FFF;
+		padding-top: 30px;
+		width: 255px;
+		height: 192px;
+		.social{
+			height: 25px;
+			width: 115px;
+			margin: 20px auto;
+
+			.social-fb{
+				background: url('../resources/icons/social.png') 0 0;
+			}
+			.social-tw{
+				background: url('../resources/icons/social.png') -25px 0px;
+			}
+			.social-tu{
+				background: url('../resources/icons/social.png') -75px 0px;
+			}
+			.social-fb,.social-tw,.social-tu{
+				background-repeat: no-repeat;
+				height: 25px;
+				width: 25px;
+				margin-right: 20px;
+				float: left;
+				&:last-child{
+					margin: 0px;
+				}
+			}
+		}
+	}
+		&:hover{
+			.team-prof-overlay{
+				opacity: 0.85;
+				-webkit-transition: all 0.2s ease-out;
+					-moz-transition: all 0.2s ease-out;
+					-ms-transition: all 0.2s ease-out;
+					-o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;	
+				.email{
+					-webkit-transition: all 0.2s ease-out;
+					-moz-transition: all 0.2s ease-out;
+					-ms-transition: all 0.2s ease-out;
+					-o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;	
+					top: 75px;
+				}
+				.email-add{
+					bottom: 65px;
+					-webkit-transition: all 0.2s ease-out;
+					-moz-transition: all 0.2s ease-out;
+					-ms-transition: all 0.2s ease-out;
+					-o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;	
+				}
+			}
+			.profile{
+				-webkit-transition: all 0.2s ease-out;
+				-moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+				background: #4CDDF3;
+				.header5{
+					color: #FFF;
+				}
+				.separator{
+					background: #FFF;
+				}
+			}
+		}
+	}
+}
+
+#facts{
+	background: #FFF;
+	padding: 50px 0px;
+	.header7{
+		margin: 30px auto;
+	}
+	.facts-desc{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		font-weight: 300;
+		color: #7F7F7F;
+		text-align: center;
+		margin: 20px auto;
+	}
+}
+#tweet{
+	background: url('../resources/icons/facts.png') 0 0 #4CDDF3;
+}
+#client{
+	background: url('../resources/icons/facts.png') -73px 0px #4CDDF3;
+}
+#project{
+	background: url('../resources/icons/facts.png') -146px 0px #4CDDF3;
+}
+#coffee{
+	background: url('../resources/icons/facts.png') -219px 0px #4CDDF3;
+}
+#tweet,
+#client,
+#project,
+#coffee{
+	height: 71px;
+	width: 73px;
+	margin: auto;
+}
+
+#parallax{
+	background: url('../resources/parallax/parallax-02.png') #4CDDF3;
+	position: relative;
+	overflow: hidden;
+	height: 625px;
+	#para-header{
+		height: 200px;
+		width: 480px;
+		margin: 120px auto 50px auto;
+	}
+	#parallax-bg{
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+		#parallax-layer-1{
+		width: 90%;
+		height: 50%;
+		position: absolute;
+		bottom: -50%;
+		left: 5%;
+			img{
+				width: 100%;
+				height: 100%;
+			}	
+		}
+	}
+}
+
+#services{
+	padding: 50px 0px 85px;
+	background: #F7F7F7;
+}
+.circle{
+	height: 110px;
+	width: 110px;
+	border-radius: 110px;			
+	margin: 10px auto 30px;
+}
+#tool{
+	background: url('../resources/icons/sl-icons.png') 0px 0px #4CDDF3;
+}
+#diamond{
+	background: url('../resources/icons/sl-icons.png') -110px 0px #4CDDF3;	
+}
+#globe{
+	background: url('../resources/icons/sl-icons.png') -220px 0px #4CDDF3;
+}
+#pin{
+	background: url('../resources/icons/sl-icons.png') -330px 0px #4CDDF3;
+}
+#clock{
+	background: url('../resources/icons/sl-icons.png') -440px 0px #4CDDF3;
+}
+#tool,#diamond,#globe,#pin,#clock{
+	&:hover{
+		background-color: #E6E6E6;
+	}
+}
+.tooltip{
+	display: none;
+	position: absolute;
+	width: 220px;
+	background: #000;
+	padding: 5px 16px;
+	margin-bottom: 30px;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -130px;
+	top: auto;
+	ul{
+		color: #FFF;
+		font-size: 14px;
+		text-align: left;
+		font-weight: 300px;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 30px;
+		li{
+			span{
+				height: 15px;
+				width: 15px;
+				background: url('../resources/icons/ckeck.png') no-repeat #4CDDF3;
+				float: left;
+				margin: 7px 7px -3px 0px;
+			}	
+			p{
+				float: left;
+			}
+		}
+	}
+			
+}
+
+.arrow-down{
+	position: absolute;
+	left: 50%;
+	bottom: -8px;
+	margin-left: -8px;
+	display: none;
+	width: 0px;
+	height: 0px;
+	border-left: 8px solid rgba(0, 0, 0, 0);
+	border-right: 8px solid rgba(0, 0, 0, 0);
+	border-top: 8px solid rgba(6, 6, 6, 0.85);
+}
+/*@mixin transition($dir, $time, $trans){
+	-webkit-transition: $dir $time $trans;
+	   -moz-transition: $dir $time $trans;
+	    -ms-transition: $dir $time $trans;
+	     -o-transition: $dir $time $trans;
+		    transition: $dir $time $trans;
+}*/

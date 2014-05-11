@@ -1,0 +1,199 @@
+#hello{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 26px;
+	letter-spacing: 3px;
+}
+.title-2{
+	font-size: 16px;
+	width: 680px;
+}
+.headline{
+	font-family: "Brandon Grot w01 Bold",'Montserrat',sans-serif;
+	font-size: 100px;
+	display: none;
+}
+#hello,
+.title-2,
+.headline{
+	color: #FFF;
+}
+.header1{
+	color: #404141;
+	font-size: 37PX;
+	letter-spacing: 5PX;
+}
+.header2{
+	color: #757575;
+	font-size: 17PX;
+}
+.header3{
+	font-size: 28px;
+	color: #434343;
+	margin: 10px auto 50px auto;
+}
+.header4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #D7D9DA;
+}
+.header5{
+	font-size: 14px;
+	color: #7F7F7F;
+}
+.header6{
+	font-size: 18px;
+	color: #030303;
+}
+.header7{
+	font-size: 100px;
+	line-height: 75px;
+	color: #000;
+}
+.header8{
+	font-size: 35px;
+	color: #FFF;
+}
+.serv-label{
+	text-align: center;
+	font-size: 18px;
+	color: #434242;
+}
+.t-car-text{
+	font-size: 14px;
+	color: #ACACAC;
+	line-height: 1.4em;
+}
+.t-car-text2{
+	color: #474747;
+	font-weight: 700;
+}
+.client-text-1{
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #FFF;
+}
+.client-text-2{
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #555;
+}
+.contact-text-1{
+	color: #3F3F3F;
+}
+.contact-text-2{
+	color: #A8A8A8;
+}
+input[type="text"],textarea{
+	font-family: 'Montserrat',sans-serif;
+	font-size: 13px;
+	color: #A8A8A8;
+}
+
+.prog-fill-text{
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 36px;
+	color: #FFF;
+	padding-left: 18px;
+	p{
+		float: left;
+	}
+}
+.port-btn-prop{
+	font-size: 15px;
+	color: #C1C1C1;
+}
+.contact-text-1,
+.contact-text-2{
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.title-2,
+.header4,
+.serv-label,
+.port-btn-prop,
+.client-text-1{
+	font-weight: 400;
+}
+
+
+.header2,
+.header3,
+.header7,
+.header8,
+input[type="text"]{
+	font-weight: 300;
+}
+
+.foot-text{
+	font-size: 13px;
+	color: #AAA;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.header1,
+.header4,
+.header6,
+.header7{
+	text-align: center;
+	margin: auto;
+}
+.header5{
+	margin: 10px auto 20px auto;
+	text-align: center;
+}
+.header2,
+.header3{
+	text-align: center;
+}
+.title-2,
+.header1,
+.header2,
+.header3,
+.header5,
+.header6,
+.header7,
+.header8,
+.serv-label,
+.t-car-text,
+.t-car-text2,
+.port-btn-prop,
+.client-text-1,
+.client-text-2,
+.contact-text-1,
+.contact-text-2,
+.prog-fill-text,
+.port-nav-prop{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.dark{
+	color: #404040;
+}
+.light{
+	color: #FFF;
+}
+.separate{
+	text-align: center;
+	margin: 30px auto;
+}
+input[type="submit"].light{
+	background: #4CDDF3;
+}
+
+.about{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+	color: #888;
+	a{
+		text-decoration: none;
+		&:hover,&:link,&:active,&:visited{
+			color: #4CDDF3;
+		}
+	}
+}

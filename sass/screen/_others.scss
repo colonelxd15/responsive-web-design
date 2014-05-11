@@ -1,0 +1,177 @@
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('../resources/icons/overlay.png');
+}
+#nav-properties{
+	position: relative
+}
+#nav-wrapper{
+	height: 75px;
+	width: 100%;
+	background: #FFF;
+}
+.spacing-top{
+	padding: 120px 0 30px;
+}
+.spacing-text{
+	margin: 50px auto;
+	text-align: center;
+}
+.hide{
+	overflow: hidden !important;
+}
+/**********Animation***********/
+#active{
+	-webkit-animation-duration: 1s; 
+   	animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+   	animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    display: block;
+}
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+.fadeOutDown { 
+    -webkit-animation-name: fadeOutDown; 
+    animation-name: fadeOutDown; 
+}   
+/**********Spacer***********/
+.separator,.separator1{
+	height: 2px;
+	background: #4CDDF3;
+	margin: auto;
+}
+.separator{
+	width: 50px;
+}
+.separator1{
+	width: 100px;
+}
+/*********Special**********/
+#link1{
+	width: 200px;
+	padding: 15px 0px;
+	border: solid 2px #4CDDF3;
+	margin-top: 30px;
+	a{
+		text-decoration: none;
+		color: #FFF;
+	}
+}
+#goto-top{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: 10;
+	border-radius: 50px;
+	background: #4CDDF3;
+	p{
+		line-height: 30px;
+		text-align: center;
+	}
+}
+#prev_image,#next_image,#portfolio{
+	background: #E1E1E1;
+}
+#next_image_test{
+	right: 0px;
+}
+#prev_image_test{
+	left: 0px;
+}
+#dot-holder{
+	left: 230px;
+}
+#prev_image, #next_image{
+	width: 30px;
+	height: 57px;
+	img{
+		position: absolute;
+	}
+	&:hover{
+		background:#4CDDF3;
+	}
+}
+#prev_image{
+	img{
+		left: 0px;	
+	}
+}
+#next_image{
+	img{
+		right: 0px;
+	}
+}
+#portfolio-nav{
+	margin: 10px 110px;
+	height: 40px;
+	width: 180px;
+	border-radius: 25px;
+	background:#4CDDF3;
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	a{
+		text-decoration: none;
+		color: #FFF;
+	}
+	&:hover{
+		background: #E1E1E1;
+	}
+}
+.next,
+.prev{
+	top: 250px;
+	position: absolute;
+	width: 40px;
+	height: 58px;
+	opacity: 1;
+}
+.next{
+	background: url('../resources/icons/c-arrows.png') -7px -98px #4CDDF3;
+	background-repeat: 	no-repeat;
+}
+.prev{
+	background: url('../resources/icons/c-arrows.png') -17px -14px #4CDDF3;
+	background-repeat: no-repeat;
+}
+/*******padding*************/
+.head1-pad{
+	padding: 70px 0 30px;
+}
+.head2-pad{
+	margin: 50px auto;
+	width: 680px;
+}
+/********************************/
+.round-img{
+	border-radius: 99px;
+	position: relative;
+	float: left;
+	margin: 0px 20px 0px 0px;
+}
+.prog-bg{
+	height: 36px;
+	width: 70%;
+	margin: 30px auto;
+	background: #DEDEDE;
+	border-radius: 3px;
+	.prog-fill{
+		height: 36px;
+		background: url('../resources/icons/skill-sprite.png') #4CDDF3;
+		span{
+			width: 200px;
+			float: left;
+			opacity: 0;
+		}
+	}
+	#w-60,#w-70,#w-80,#w-90,#w-100{
+		width: 0%;
+	}
+}

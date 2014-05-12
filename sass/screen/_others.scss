@@ -47,7 +47,7 @@
 	margin: auto;
 }
 .separator{
-	width: 50px;
+	width: 100px;
 }
 .separator1{
 	width: 100px;
@@ -158,16 +158,6 @@
 	}
 }
 
-#head_prev_image{
-	@media screen and (max-width:479px){
-		left: 50px;
-	}
-}
-#head_next_image{
-	@media screen and (max-width: 479px){
-		right: 105px;
-	}
-}
 /*******padding*************/
 .head1-pad{
 	padding: 70px 0 30px;

@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 22, ../sass/screen/_sliders.scss */
 #featured-slider-cont #featured-slider {
   height: 400px;
-  width: 300%;
+  width: 2335px;
   margin-left: -695px;
   position: relative;
 }
@@ -151,7 +151,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 71, ../sass/screen/_sliders.scss */
 #featured-slider-cont #featured-slider .featured-slider-image:hover .image-overlay {
-  height: 181px;
+  height: 266px;
   padding: 85px 0px 0px 0px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -431,7 +431,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 49, ../sass/screen/_others.scss */
 .separator {
-  width: 50px;
+  width: 100px;
 }
 
 /* line 52, ../sass/screen/_others.scss */
@@ -581,70 +581,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: 1.0;
 }
 
-@media screen and (max-width: 479px) {
-  /* line 161, ../sass/screen/_others.scss */
-  #head_prev_image {
-    left: 50px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  /* line 166, ../sass/screen/_others.scss */
-  #head_next_image {
-    right: 105px;
-  }
-}
-
 /*******padding*************/
-/* line 172, ../sass/screen/_others.scss */
+/* line 162, ../sass/screen/_others.scss */
 .head1-pad {
   padding: 70px 0 30px;
 }
 @media screen and (max-width: 479px) {
-  /* line 172, ../sass/screen/_others.scss */
+  /* line 162, ../sass/screen/_others.scss */
   .head1-pad {
     padding: 0px 40px 50px;
   }
 }
 
-/* line 178, ../sass/screen/_others.scss */
+/* line 168, ../sass/screen/_others.scss */
 .head2-pad {
   margin: 50px auto;
   width: 680px;
 }
 @media screen and (max-width: 479px) {
-  /* line 178, ../sass/screen/_others.scss */
+  /* line 168, ../sass/screen/_others.scss */
   .head2-pad {
     padding: 0px 25px;
     width: auto;
   }
 }
 
-/* line 186, ../sass/screen/_others.scss */
+/* line 176, ../sass/screen/_others.scss */
 .head1-pad-nt {
   padding: 0px 0 30px;
   text-align: center;
 }
 @media screen and (max-width: 479px) {
-  /* line 186, ../sass/screen/_others.scss */
+  /* line 176, ../sass/screen/_others.scss */
   .head1-pad-nt {
     padding: 100px 0px 60px;
   }
 }
 
-/* line 193, ../sass/screen/_others.scss */
+/* line 183, ../sass/screen/_others.scss */
 .head2-pad-fb {
   margin: 50px auto 115px;
   text-align: center;
 }
 
-/* line 197, ../sass/screen/_others.scss */
+/* line 187, ../sass/screen/_others.scss */
 .head4-pad-ft {
   margin: 60px auto 0px !important;
 }
 
 /********************************/
-/* line 201, ../sass/screen/_others.scss */
+/* line 191, ../sass/screen/_others.scss */
 .round-img {
   border-radius: 99px;
   position: relative;
@@ -652,7 +638,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0px 20px 0px 0px;
 }
 
-/* line 207, ../sass/screen/_others.scss */
+/* line 197, ../sass/screen/_others.scss */
 .prog-bg {
   height: 36px;
   width: 70%;
@@ -660,30 +646,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #DEDEDE;
   border-radius: 3px;
 }
-/* line 213, ../sass/screen/_others.scss */
+/* line 203, ../sass/screen/_others.scss */
 .prog-bg .prog-fill {
   height: 36px;
   background: url("../resources/icons/skill-sprite.png") #4cddf3;
 }
-/* line 216, ../sass/screen/_others.scss */
+/* line 206, ../sass/screen/_others.scss */
 .prog-bg .prog-fill span {
   width: 200px;
   float: left;
   opacity: 0;
 }
-/* line 222, ../sass/screen/_others.scss */
+/* line 212, ../sass/screen/_others.scss */
 .prog-bg #w-60, .prog-bg #w-70, .prog-bg #w-80, .prog-bg #w-90, .prog-bg #w-100 {
   width: 0%;
 }
 @media screen and (max-width: 479px) {
-  /* line 207, ../sass/screen/_others.scss */
+  /* line 197, ../sass/screen/_others.scss */
   .prog-bg {
     width: 100%;
   }
 }
 
 /**********input form****************/
-/* line 230, ../sass/screen/_others.scss */
+/* line 220, ../sass/screen/_others.scss */
 input, textarea {
   padding: 11px;
   border: none;
@@ -694,12 +680,12 @@ input, textarea {
   margin: auto;
 }
 
-/* line 239, ../sass/screen/_others.scss */
+/* line 229, ../sass/screen/_others.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 242, ../sass/screen/_others.scss */
+/* line 232, ../sass/screen/_others.scss */
 input[type="submit"] {
   font-size: 14px;
   padding: 3px 30px;
@@ -709,19 +695,19 @@ input[type="submit"] {
   background: #4CDDF3;
   color: #FFF;
 }
-/* line 250, ../sass/screen/_others.scss */
+/* line 240, ../sass/screen/_others.scss */
 input[type="submit"]:hover {
   background: #F7F7F7;
   color: #4CDDF3;
 }
 
 /************footer************/
-/* line 256, ../sass/screen/_others.scss */
+/* line 246, ../sass/screen/_others.scss */
 #footer {
   height: 201px;
 }
 
-/* line 259, ../sass/screen/_others.scss */
+/* line 249, ../sass/screen/_others.scss */
 #footer-icons {
   margin: auto;
   position: relative;
@@ -729,7 +715,7 @@ input[type="submit"]:hover {
   width: 213px;
   margin-top: 50px;
 }
-/* line 265, ../sass/screen/_others.scss */
+/* line 255, ../sass/screen/_others.scss */
 #footer-icons #foot-fb, #footer-icons #foot-tw, #footer-icons #foot-gplus {
   height: 51px;
   width: 51px;
@@ -737,19 +723,19 @@ input[type="submit"]:hover {
   margin: 10px;
   float: left;
 }
-/* line 271, ../sass/screen/_others.scss */
+/* line 261, ../sass/screen/_others.scss */
 #footer-icons #foot-fb:hover, #footer-icons #foot-tw:hover, #footer-icons #foot-gplus:hover {
   opacity: 0.7;
 }
-/* line 275, ../sass/screen/_others.scss */
+/* line 265, ../sass/screen/_others.scss */
 #footer-icons #foot-fb {
   background: url("../resources/icons/social-footer.png") -102px 0px;
 }
-/* line 278, ../sass/screen/_others.scss */
+/* line 268, ../sass/screen/_others.scss */
 #footer-icons #foot-tw {
   background: url("../resources/icons/social-footer.png") 0px 0px;
 }
-/* line 281, ../sass/screen/_others.scss */
+/* line 271, ../sass/screen/_others.scss */
 #footer-icons #foot-gplus {
   background: url("../resources/icons/social-footer.png") -51px 0px;
 }
@@ -813,6 +799,43 @@ input[type="submit"]:hover {
   /* line 45, ../sass/screen/_headers.scss */
   #title-cont #link1 {
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 55, ../sass/screen/_headers.scss */
+  #featured-works .spacing-top {
+    padding: 80px 40px 11px !important;
+    font-size: 40px;
+  }
+  /* line 59, ../sass/screen/_headers.scss */
+  #featured-works .header {
+    padding: 0px 40px;
+  }
+  /* line 62, ../sass/screen/_headers.scss */
+  #featured-works #feat-nav {
+    width: 300px;
+  }
+  /* line 64, ../sass/screen/_headers.scss */
+  #featured-works #feat-nav #portfolio-nav {
+    margin: 10px 30px;
+  }
+  /* line 68, ../sass/screen/_headers.scss */
+  #featured-works #featured-slider {
+    width: 2335px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 75, ../sass/screen/_headers.scss */
+  #featured-slider-cont #featured-slider {
+    margin-left: -1035px;
+  }
+}
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 81, ../sass/screen/_headers.scss */
+  #featured-slider-cont #featured-slider {
+    margin-left: -955px;
   }
 }
 

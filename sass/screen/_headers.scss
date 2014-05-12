@@ -193,3 +193,62 @@
 		}
 	}
 }
+#video{
+	@media screen and (max-width:795px) and (min-width:480px){
+		height: 160px !important;
+	}
+}
+#portfolio-cont{
+	@media screen and (max-width:795px) and (min-width:480px){
+		.header1{
+			font-size: 14px;
+		}
+		.head2-pad{
+			width: 410px;
+			padding: 0 25px;
+		}
+		#port-btn{
+			width: 100%;
+			padding: 0 40px;
+			height: 80px;
+		}
+		.clients-info{
+			height: 369px;
+			width: 480px;
+		}
+		#works-car-view
+		{
+			#works-car-cont{
+			width: 1680px;
+			li{
+				width: 240px;
+			}
+		}
+		}
+	}
+}
+#contact{
+	@media screen and (max-width:795px) and (min-width:480px){
+		width:480px;
+		#contact-head-cont{
+			.header1,.header2{
+				font-size: 17px;
+			}
+			.head1-pad-nt{
+				padding: 0px 0 60px;
+			}
+			.head2-pad-fb{
+				width: 213px;
+				margin: 50px auto 115px;
+			}
+			width: 400px;
+			padding: 0 25px;
+			img{
+				width: 100%;
+			}
+		}
+		.col-md-4{
+			padding: 0 50px;
+		}
+	}
+}

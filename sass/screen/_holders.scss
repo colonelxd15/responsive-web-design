@@ -9,10 +9,6 @@
 #costum-cont{
 	padding: 0 !important;
 	margin: 0 !important;
-	@media screen and (max-width: 479px){
-		height: 320px;
-	}
-
 }
 #testimonials{
 	padding-top: 80px;
@@ -434,8 +430,8 @@
 		height: 100%;
 	}
 	section{
-		height: 98px;
-		width: 218px;
+		height: 100%;
+		width: 100%;
 		padding: 51px 20px;
 		position: absolute;
 		opacity: 0;

@@ -803,6 +803,10 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 52, ../sass/screen/_headers.scss */
+  #featured-works .header1 {
+    font-size: 14px !important;
+  }
   /* line 55, ../sass/screen/_headers.scss */
   #featured-works .spacing-top {
     padding: 80px 40px 11px !important;
@@ -820,22 +824,147 @@ input[type="submit"]:hover {
   #featured-works #feat-nav #portfolio-nav {
     margin: 10px 30px;
   }
-  /* line 68, ../sass/screen/_headers.scss */
-  #featured-works #featured-slider {
-    width: 2335px;
-  }
 }
 
 @media screen and (max-width: 479px) {
-  /* line 75, ../sass/screen/_headers.scss */
+  /* line 72, ../sass/screen/_headers.scss */
   #featured-slider-cont #featured-slider {
     margin-left: -1035px;
   }
 }
 @media screen and (max-width: 795px) and (min-width: 480px) {
-  /* line 81, ../sass/screen/_headers.scss */
+  /* line 78, ../sass/screen/_headers.scss */
   #featured-slider-cont #featured-slider {
     margin-left: -955px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 85, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont {
+    height: 275px;
+    width: 290px;
+  }
+  /* line 88, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont #office-carousel {
+    height: 210px;
+    width: 870px;
+  }
+  /* line 91, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont #office-carousel img {
+    height: 210px;
+    width: 290px;
+  }
+}
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 100, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont {
+    height: 340px;
+    width: 400px;
+  }
+  /* line 103, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont #office-carousel {
+    width: 1200px;
+    height: 280px;
+  }
+  /* line 106, ../sass/screen/_headers.scss */
+  #about-section #office-carousel-cont #office-carousel img {
+    height: 280px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 114, ../sass/screen/_headers.scss */
+  #costum-cont {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 114, ../sass/screen/_headers.scss */
+  #costum-cont {
+    height: 600px;
+  }
+  /* line 121, ../sass/screen/_headers.scss */
+  #costum-cont .cont-bg .pos-abs {
+    top: 40px;
+  }
+  /* line 123, ../sass/screen/_headers.scss */
+  #costum-cont .cont-bg .pos-abs .header1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 133, ../sass/screen/_headers.scss */
+  #team .header1 {
+    font-size: 14px !important;
+  }
+  /* line 136, ../sass/screen/_headers.scss */
+  #team .head2-pad {
+    width: 480px;
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 142, ../sass/screen/_headers.scss */
+  #parallax {
+    height: 400px !important;
+    width: 480px;
+  }
+  /* line 147, ../sass/screen/_headers.scss */
+  #parallax #para-header {
+    width: 400px !important;
+    margin: 40px auto 0px !important;
+  }
+  /* line 151, ../sass/screen/_headers.scss */
+  #parallax #parallax-bg {
+    height: 0;
+    width: 0;
+  }
+  /* line 155, ../sass/screen/_headers.scss */
+  #parallax .header8 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 163, ../sass/screen/_headers.scss */
+  #services .header1 {
+    font-size: 14px;
+  }
+  /* line 166, ../sass/screen/_headers.scss */
+  #services .head2-pad {
+    width: 400px;
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 795px) and (min-width: 480px) {
+  /* line 175, ../sass/screen/_headers.scss */
+  #testimonials #car-holder {
+    width: 450px;
+    height: 310px;
+  }
+  /* line 178, ../sass/screen/_headers.scss */
+  #testimonials #car-holder #testimonials-carousel {
+    width: 1350px;
+    height: 310px;
+  }
+  /* line 181, ../sass/screen/_headers.scss */
+  #testimonials #car-holder #testimonials-carousel .t-car-cont {
+    width: 450px;
+    height: 310px;
+  }
+  /* line 184, ../sass/screen/_headers.scss */
+  #testimonials #car-holder #testimonials-carousel .t-car-cont .t-car-conts {
+    width: 350px;
+    margin: auto;
+  }
+  /* line 191, ../sass/screen/_headers.scss */
+  #testimonials #dot-holder-test {
+    bottom: 0 !important;
   }
 }
 

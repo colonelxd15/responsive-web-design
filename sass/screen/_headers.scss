@@ -48,10 +48,10 @@
 	}
 }
 #featured-works{
-	//@media screen and (max-width: 479px){
-	//
-	//}
 	@media screen and (max-width:795px) and (min-width:480px){
+		.header1{
+			font-size: 14px !important;
+		}
 		.spacing-top{
 			padding: 80px 40px 11px !important;
 			font-size: 40px;
@@ -65,9 +65,6 @@
 				margin: 10px 30px;
 			}
 		}
-		#featured-slider{
-			width: 2335px;
-		}
 	}
 }
 #featured-slider-cont{
@@ -80,6 +77,119 @@
 	{
 		#featured-slider{
 			margin-left: -955px;
+		}
+	}
+}
+#about-section{
+	@media screen and (max-width:479px){
+		#office-carousel-cont{
+			height: 275px;
+			width: 290px;
+			#office-carousel{
+				height: 210px;
+				width: 870px;
+				img{
+					height: 210px;
+					width: 290px;
+				}
+			}
+			
+		}
+	}
+	@media screen and (max-width:795px) and (min-width:480px){
+		#office-carousel-cont{
+			height: 340px;
+			width: 400px;
+			#office-carousel{
+				width: 1200px;
+				height: 280px;
+				img{
+					height: 280px;
+					width:400px;
+				}
+			}
+		}
+	}
+}
+#costum-cont{
+	@media screen and (max-width:479px){
+		height: 320px;
+	}
+	@media screen and (max-width:795px) and (min-width:480px){
+		height: 600px;
+		.cont-bg{
+			.pos-abs{
+				top: 40px;
+				.header1{
+					font-size: 14px;
+				}	
+			}
+		}
+	}
+}
+#team{
+	@media screen and (max-width:479px){}
+	@media screen and (max-width:795px) and (min-width:480px){
+		.header1{
+			font-size: 14px !important;
+		}
+		.head2-pad{
+			width: 480px;
+			padding: 0 25px;
+		}
+	}
+}
+#parallax{
+	@media screen and (max-width:479px){}
+	@media screen and (max-width:795px) and (min-width:480px){
+		height: 400px !important;
+		width: 480px;
+		#para-header{
+			width: 400px !important;
+			margin: 40px auto 0px !important;
+		}
+		#parallax-bg{
+			height: 0;
+			width: 0;
+		}
+		.header8{
+			font-size: 14px;
+		}
+	}
+}
+#services{
+	@media screen and (max-width:479px){}
+	@media screen and (max-width:795px) and (min-width:480px){
+		.header1{
+			font-size: 14px;
+		}
+		.head2-pad{
+			width: 400px;
+			padding: 0 25px;
+		}
+	}
+}
+#testimonials{
+	@media screen and (max-width:479px){}
+	@media screen and (max-width: 795px) and (min-width:480px){
+		#car-holder{
+			width: 450px;
+			height: 310px;
+			#testimonials-carousel{
+				width: 1350px;
+				height: 310px;
+				.t-car-cont{
+					width: 450px;
+					height: 310px;
+					.t-car-conts{
+						width:350px;
+						margin: auto;
+					}
+				}
+			}
+		}
+		#dot-holder-test{
+			bottom: 0 !important;
 		}
 	}
 }

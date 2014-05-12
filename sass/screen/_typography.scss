@@ -3,6 +3,7 @@
 	font-style: italic;
 	font-size: 26px;
 	letter-spacing: 3px;
+
 }
 .title-2{
 	font-size: 16px;
@@ -20,12 +21,15 @@
 }
 .header1{
 	color: #404141;
-	font-size: 37PX;
-	letter-spacing: 5PX;
+	font-size: 37px;
+	letter-spacing: 5px;
+	@media screen and (max-width:479px){
+		font-size: 17px;
+	}
 }
 .header2{
 	color: #757575;
-	font-size: 17PX;
+	font-size: 17px;
 }
 .header3{
 	font-size: 28px;

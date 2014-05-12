@@ -108,22 +108,44 @@
 			height: 350px;
 			overflow: hidden;
 			margin: auto;
+			@media screen and (max-width: 479px)
+			{
+				height: 275px;
+				width: 290px;
+			}
 			#office-carousel{
 				width: 1510px;
 				height: 350px;
+				@media screen and (max-width: 479px)
+				{
+					height: 210px;
+					width: 870px;
+				}
 				img{
+					float: left;
 					margin: 0px;
+					@media screen and (max-width: 479px)
+					{
+						height: 210px;
+						width: 290px;
+					}
 				}
 			}
 			
 		}
 #dot-holder{
-	left: 268px;
+	//left: 268px;
 }
 .dot-cont{
-	width: 110px;
+	width: 90px;
 	height: 50px;
-	position: absolute;
+	position: relative;
+	margin: auto;
+	left: 0px !important;
+	//@media screen and (max-width: 320px){
+	//	left: 0px !important;
+	//	margin: auto;
+	//}
 }
 
 	.dot{
@@ -144,22 +166,33 @@
 
 //arrows//
 #next_image_studio{
-	right: 0px;
+	right: 20px;
+	top: 250px;
 }
 #prev_image_studio{
-	left: 0px;
+	left: 20px;
+	top: 250px;
 }
 //
 #testimonials-carousel{
 	width: 1500px;
 	height: 265px;
 	overflow: hidden;
+	@media screen and (max-width:479px){
+		width: 870px;
+		#test-hold-np{
+			padding: 0px !important;
+		}
+	}
 }
 #car-holder{
 	width: 500px;
 	height: 265px;
 	overflow: hidden;
 	margin: auto;
+	@media screen and (max-width: 479px){
+		width: 290px;
+	}
 }
 .t-car-cont{
 	height: 265px;
@@ -175,5 +208,19 @@
 	}
 	.t-car-conts:last-child{
 		border-bottom: none;
+	}
+	@media screen and (max-width:479px){
+		width: 290px;
+
+		.t-car-conts{
+			padding: 0px 0px 0px;
+			p{
+				width: 290px;
+				font-size: 13px;
+			}
+		}
+		.t-car-conts:last-child{
+			padding: 5px 0px 0px;
+		}
 	}
 }

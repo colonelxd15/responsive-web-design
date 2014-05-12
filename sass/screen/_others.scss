@@ -75,17 +75,24 @@
 		text-align: center;
 	}
 }
-#prev_image,#next_image,#portfolio{
+#prev_image,#next_image,#portfolio_nav{
 	background: #E1E1E1;
+	float: left;
 }
 #next_image_test{
-	right: 0px;
+	top: 205px;
+	right: 20px;
 }
 #prev_image_test{
-	left: 0px;
+	top: 205px;
+	left: 20px;
 }
 #dot-holder{
 	left: 230px;
+}
+#dot-holder-test{
+	left: 268px;
+	bottom: -50px;
 }
 #prev_image, #next_image{
 	width: 30px;
@@ -124,10 +131,12 @@
 	&:hover{
 		background: #E1E1E1;
 	}
+	@media screen and (max-width: 479px){
+		margin: 10px 30px;
+	}
 }
 .next,
 .prev{
-	top: 250px;
 	position: absolute;
 	width: 40px;
 	height: 58px;
@@ -141,13 +150,52 @@
 	background: url('../resources/icons/c-arrows.png') -17px -14px #4CDDF3;
 	background-repeat: no-repeat;
 }
+#head_prev_image,
+#head_next_image{
+	opacity: 0.4;
+	&:hover{
+		opacity: 1.0;
+	}
+}
+
+#head_prev_image{
+	@media screen and (max-width:479px){
+		left: 50px;
+	}
+}
+#head_next_image{
+	@media screen and (max-width: 479px){
+		right: 105px;
+	}
+}
 /*******padding*************/
 .head1-pad{
 	padding: 70px 0 30px;
+	@media screen and (max-width:479px){
+		padding: 0px 40px 50px;
+	}
 }
 .head2-pad{
 	margin: 50px auto;
 	width: 680px;
+	@media screen and (max-width:479px){
+		padding: 0px 25px;
+		width: auto;
+	}
+}
+.head1-pad-nt{
+	padding: 0px 0 30px;
+	text-align: center;
+	@media screen and (max-width: 479px){
+		padding: 100px 0px 60px;
+	}
+}
+.head2-pad-fb{
+	margin: 50px auto 115px;
+	text-align: center;
+}
+.head4-pad-ft{
+	margin: 60px auto 0px !important;
 }
 /********************************/
 .round-img{
@@ -174,4 +222,63 @@
 	#w-60,#w-70,#w-80,#w-90,#w-100{
 		width: 0%;
 	}
+	@media screen and (max-width: 479px){
+		width: 100%;
+	}
+}
+/**********input form****************/
+input,textarea{
+	padding: 11px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	background: #FBFBFB;
+	width: 97%;
+	margin: auto;
+}
+textarea{
+	resize: vertical;
+}
+input[type="submit"]{
+	font-size: 14px;
+	padding: 3px 30px;
+	line-height: 26px;
+	border-radius: 3px;
+	border: none;
+	background: #4CDDF3;
+	color: #FFF;
+	&:hover{
+		background: #F7F7F7;
+		color: #4CDDF3;
+	}
+}
+/************footer************/
+#footer{
+	height: 201px;
+}
+#footer-icons{
+	margin: auto;
+	position: relative;
+	height: 73px;
+	width: 213px;
+	margin-top: 50px;
+	#foot-fb,#foot-tw,#foot-gplus{
+		height: 51px;
+		width: 51px;
+		position: relative;
+		margin: 10px;
+		float: left;
+			&:hover{
+				opacity: 0.7;
+			}
+		}
+		#foot-fb{
+			background: url('../resources/icons/social-footer.png') -102px 0px;
+		}
+		#foot-tw{
+			background: url('../resources/icons/social-footer.png') 0px 0px;
+		}
+		#foot-gplus{
+			background: url('../resources/icons/social-footer.png') -51px 0px ;
+		}
 }

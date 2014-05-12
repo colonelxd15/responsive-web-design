@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Solido Flat Theme</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
 		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
      	<!--link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /-->
 		<script src="js/jquery-1.10.2.js"></script>
@@ -34,18 +36,12 @@
 <section id="nav-wrapper">
 	<nav class="navbar navbar-default" role="navigation" id="nav-properties">
 	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
+	        <img src="resources/icons/menu-icon-blk.png" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
 	      <a class="navbar-brand" href="#">Solido</a>
 	    </div>
 
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="navbar-cont">
 	      <ul class="nav navbar-nav navbar-right">
 	        	<li><a href="#home-section">HOME</a></li>
 				<li><a href="#about-section">ABOUT</a></li>
@@ -54,8 +50,8 @@
 				<li><a href="#portfolio-section">PORTFOLIO</a></li>
 				<li><a href="#contact-section">CONTACT</a></li>
 	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+	    </div>
+	  </div>
 	</nav>
 </section>
 <!--End Page Navigation-->
@@ -74,14 +70,14 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-2">
-				<img src="resources/icons/s-prev.png" id="head_prev_image">
+			<div class="col-xs-2" id="head_prev_image">
+				<img src="resources/icons/s-prev.png">
 			</div>
 			<div class="col-xs-8">
 				<div class="separator"></div>
 			</div>
-			<div class="col-xs-2">
-				<img src="resources/icons/s-next.png" id="head_next_image">
+			<div class="col-xs-2"  id="head_next_image">
+				<img src="resources/icons/s-next.png">
 			</div>
 		</div>
 		<div class="row">
@@ -117,15 +113,19 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-1 col-md-offset-3" id="prev_image">
-				<img src="resources/icons/f-prev.png">	
+			<div id="feat-nav">
+				<img src="resources/icons/f-prev.png" id="prev_image">	
+				<div  id="portfolio-nav">
+					<a href="#portfolio-section">GO PORTFOLIO</a>
+				</div>
+				<img src="resources/icons/f-next.png" id="next_image">
 			</div>
-			<div class="col-md-4" id="portfolio-nav">
-				<a href="#portfolio-section">GO PORTFOLIO</a>	
+			<!--div class="col-md-4" >
+					
 			</div>
-			<div class="col-md-1" id="next_image">
-				<img src="resources/icons/f-next.png">
-			</div>
+			<div class="col-md-1" >
+				
+			</div-->
 		</div>
 	</section>
 
@@ -136,10 +136,10 @@
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
 					<div class="featured-meta">
-					<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
-					<p>PHOTOGRAPHY</p>
+						<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+						<p>PHOTOGRAPHY</p>
+					</div>
 				</div>
-			</div>
 				<img src="resources/feat/feat-01.jpg">
 				<div class="featured-desc">YOUNG ECKLESS</div>
 			</div>
@@ -193,9 +193,9 @@
 	<section class="container-fluid" id="about-section">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="next" id="next_image_studio">
+				<div class="next visible-sm" id="next_image_studio">
 				</div>
-				<div class="prev" id="prev_image_studio">
+				<div class="prev visible-sm" id="prev_image_studio">
 				</div>
 				<header class="header4">OUR OFFICES</header>
 				<header class="header3">Amazing Studio</header>
@@ -367,7 +367,7 @@
 		<section id="para-header">
 			<p class="header4 dark">ULTRA RESPONSIVE</p>
 			<p class="header8 separate">On both Mobile & Desktop</p>
-			<div class="separator1"></div>
+			<div class="separator1 visible-sm"></div>
 		</section>
 		<div id="parallax-bg">
 			<div id="parallax-layer-1">
@@ -447,7 +447,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid">
+	<section class="container-fluid" id="testimonials">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="container-fluid">
@@ -481,14 +481,15 @@
 				</div>
 			</div>
 			<div class="col-md-6">
+
 				<div class="container-fluid">
-					<p class="header4">TESTIMONIALS</p>
+					<p class="header4 head4-pad-ft">TESTIMONIALS</p>
 					<p class="header3">Our Happy Clients</p>
 				</div>
 				
-				<div class="container-fluid">
-					<div class="prev" id="prev_image_test"></div>
-					<div class="next" id="next_image_test"></div>
+				<div class="container-fluid" id="test-holder-np">
+					<div class="prev visible-sm" id="prev_image_test"></div>
+					<div class="nex visible-sm" id="next_image_test"></div>
 					<div id="car-holder">
 					<section id="testimonials-carousel">
 						<div class="t-car-cont">
@@ -538,11 +539,193 @@
 			</div>
 		</div>
 	</section>
-	<section></section>
-	<section></section>
-	<section></section>
-
-	<script src="js/bootstrap.js"></script>
+	<section id="video" class="container-fluid overlay">
+		
+	</section>
+	<section class="container-fluid" id="portfolio-cont">
+		<div class="container">
+			<p class="header1 head1-pad">OUR PORTFOLIO</p>
+			<div class="separator1"></div>
+			<p class="header2 head2-pad">We have been privileged to work and grow with a diverse range of clients. We have worked with brands in Canada, USA, UK, and many others.</p>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="container-fluid">
+				<div id="port-btn">
+					<ul id="port-btn-cont">
+						<li id="all" class="port-btn-prop">All</li>
+						<li id="graph" class="port-btn-prop">Graphic Design</li>
+						<li id="photo" class="port-btn-prop">Photography</li>
+						<li id="web" class="port-btn-prop">Website</li>
+						<li id="motion" class="port-btn-prop">Motion</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<section class="container-fluid" id="port-img">
+			<div class="clients-info graphic">
+						<img src="resources/thumb/thumb-01.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">KALLO</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+					<div class="clients-info photo">
+						<img src="resources/thumb/thumb-02.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">THE INSIDE</p>
+							<p class="client-text-2">PHOTOGRAPHY</p>
+						</section>
+					</div>
+					<div class="clients-info graphic motion">
+						<img src="resources/thumb/thumb-03.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">LEITBERG</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+					<div class="clients-info graphic motion">
+						<img src="resources/thumb/thumb-04.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">FASHION BRAND</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+					<div class="clients-info web">
+						<img src="resources/thumb/thumb-05.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">THE CHOP SHOP</p>
+							<p class="client-text-2">WEBSITE</p>
+						</section>
+					</div>
+					<div class="clients-info web motion">
+						<img src="resources/thumb/thumb-06.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">PREGO</p>
+							<p class="client-text-2">WEBSITE</p>
+						</section>
+					</div>
+					<div class="clients-info graphic">
+						<img src="resources/thumb/thumb-07.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">BEHURS</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+					<div class="clients-info photo">
+						<img src="resources/thumb/thumb-08.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">THE NEW GIRL</p>
+							<p class="client-text-2">PHOTOGRAPHY</p>
+						</section>
+					</div>
+					<div class="clients-info graphic motion">
+						<img src="resources/thumb/thumb-09.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">SHUT UP & SHOOT</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+					<div class="clients-info graphic">
+						<img src="resources/thumb/thumb-10.jpg">
+						<section>
+							<div></div>
+							<p class="client-text-1">KULISHA 79000</p>
+							<p class="client-text-2">GRAPHIC DESIGN</p>
+						</section>
+					</div>
+		</section>
+		<div class="container-fluid" id="works-car-view">
+		<div class="row">
+			<ul id="works-car-cont">
+				<li><img src="resources/logo/logo-01.png"></li>
+				<li><img src="resources/logo/logo-02.png"></li>
+				<li><img src="resources/logo/logo-03.png"></li>
+				<li><img src="resources/logo/logo-04.png"></li>
+				<li><img src="resources/logo/logo-05.png"></li>
+				<li><img src="resources/logo/logo-06.png"></li>
+				<li><img src="resources/logo/logo-07.png"></li>
+			</ul>
+		</div>
+		</div>	
+	</section>
+	<section id="contact" class="container-fluid">
+		<div class="row">
+			<div id="contact-head-cont">
+				<img src="resources/contact/imac.png">
+				<p class="header1 head1-pad-nt">CONTACT</p>
+				<div class="separator"></div>
+				<p class="header2 head2-pad-fb">We like to create things with fun, like-minded people. Feel free to say hello!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<p class="header4">CONTACT</p>
+				<p class="header3">Visit Our Office</p>
+				<span><img src="resources/icons/adress-ico.png">
+					<p class="contact-text-1">Adress:</p>
+					<p class="contact-text-2 less">1234 Street Name, City Name</p>
+				</span>
+				<span><img src="resources/icons/phone-ico.png">
+					<p class="contact-text-1">Phone:</p>
+					<p class="contact-text-2 less">(123) 456-7890</p>
+				</span>
+				<span><img src="resources/icons/mail-ico.png">
+					<p class="contact-text-1">Email:</p>
+					<p class="contact-text-2 less">theme@solido.com</p>
+				</span>
+			</div>
+			<div class="col-md-4">
+				<p class="header4">CONTACT</p>
+					<p class="header3">Business Hours</p>
+					<span><img src="resources/icons/hours-ico.png">
+						<p class="contact-text-1">Mon.-Fri.</p>
+						<p class="contact-text-2 less">8am to 5pm</p>
+					</span>
+					<span><img src="resources/icons/hours-ico.png">
+						<p class="contact-text-1">Sat.</p>
+						<p class="contact-text-2 more" >8am to 11am</p>
+					</span>
+					<span><img src="resources/icons/hours-ico.png">
+						<p class="contact-text-1">Sun</p>
+						<p class="contact-text-2 more">Closed</p>
+					</span>
+			</div>
+			<div class="col-md-4">
+				<form action="" method="">
+					<input type="text" value="FULL NAME" name="fName">
+					<input type="text" value="YOUR EMAIL" name="email">
+					<textarea rows="6">TYPE MESSAGE</textarea>
+					<input type="submit" value="SEND MESSAGE" class="light">
+				</form>
+			</div>
+		</div> 
+	</section>
+	<section id="map">
+		<div class="row">
+			<div id="video" class="col-md-12"></div>
+		</div>
+	</section>
+	<section id="footer" class="container-fluid">
+		<div id="footer-cont" class="row">
+			<div id="footer-icons"> 
+				<div id="foot-fb" class="foot-social"></div>
+				<div id="foot-tw" class="foot-social"></div>
+				<div id="foot-gplus" class="foot-social"></div>
+			</div>
+		</div>
+		<div class="row foot-text">2013 @ Solido. All rights reserved.</div>
+	</section>
 	<script src="js/jquery.navbar.js"></script>
 	
 	<!--script src="js/jquery.load.js"></script-->
@@ -559,6 +742,6 @@
 	<script src="js/jquery.portfolio.js"></script>
 	<script src="js/jquery.portfolio-car.js"></script>
 	<script src="js/jquery.services-tooltip.js"></script-->
-	
+	<script src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
 </body>
 </html>

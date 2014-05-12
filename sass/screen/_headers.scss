@@ -4,4 +4,46 @@
 	top: 50%;
 	margin-top: -176px;
 	width: 100%;
+	@media screen and (max-width: 479px){
+		.title-2{
+			width: 240px;
+			font-size: 13px;
+			margin-top: -65px;
+		}
+		.headline{
+			font-size: 20px;
+			margin: 40px auto;
+		}
+		#link1{
+			margin: auto;
+		}
+		#head_prev_image{
+			left: 50px;
+		}
+		#head_next_image{
+			right: 105px;
+		}
+	}
+	@media screen and (max-width: 795px) and (min-width: 480px){
+		#hello{
+			margin-top: 50px;
+		}
+		.headline{
+			font-size: 25px;
+			margin: 37.5px auto;
+		}
+		.title-2{
+			margin-top: -65px;
+			width: 345px;
+		}
+		#head_prev_image{
+			left: 70px;
+		}
+		#head_next_image{
+			right: 100px;
+		}
+		#link1{
+			margin: auto;
+		}
+	}
 }

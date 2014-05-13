@@ -24,7 +24,8 @@
 			right: 105px;
 		}
 	}
-	@media screen and (max-width: 795px) and (min-width: 480px){
+	//@media screen and (max-width: 795px) and (min-width: 480px){
+	@media screen and (max-width: 599px) and (min-width: 480px){	
 		#hello{
 			margin-top: 50px;
 		}
@@ -48,10 +49,8 @@
 	}
 }
 #featured-works{
-	@media screen and (max-width:795px) and (min-width:480px){
-		.header1{
-			font-size: 14px !important;
-		}
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width:599px) and (min-width:480px){
 		.spacing-top{
 			padding: 80px 40px 11px !important;
 			font-size: 40px;
@@ -66,18 +65,30 @@
 			}
 		}
 	}
+	@media screen and (max-width:568px) and (min-width:568px){
+		.spacing-top{
+			font-size: 40px;
+			padding: 80px 40px 11px;
+		}
+	}
 }
 #featured-slider-cont{
 	@media screen and (max-width: 479px){
 		#featured-slider{
-			margin-left: -1020px;
+			margin-left: -1022.5px;
 		}
 	}
-	@media screen and (max-width: 795px) and (min-width:480px)
+	//@media screen and (max-width: 795px) and (min-width:480px)
+	@media screen and (max-width: 599px) and (min-width:480px)
 	{
 		#featured-slider{
-			margin-left: -940px;
+			margin-left: -942.5px;
 		}
+	}
+	@media screen and (max-width:568px) and (min-width:568px){
+		#featured-slider{
+			margin-left: -898.5px;
+		}	
 	}
 }
 #about-section{
@@ -99,7 +110,8 @@
 			}
 		}
 	}
-	@media screen and (max-width:795px) and (min-width:480px){
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		#about-info-cont{
 			width: 80%;
 			margin: auto;
@@ -123,14 +135,12 @@
 	@media screen and (max-width:479px){
 		height: 320px;
 	}
-	@media screen and (max-width:795px) and (min-width:480px){
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		height: 600px;
 		.cont-bg{
 			.pos-abs{
-				top: 40px;
-				.header1{
-					font-size: 14px;
-				}	
+				top: 40px;	
 			}
 		}
 	}
@@ -138,9 +148,6 @@
 #team{
 	@media screen and (max-width:479px){}
 	@media screen and (max-width:795px) and (min-width:480px){
-		.header1{
-			font-size: 14px !important;
-		}
 		.head2-pad{
 			width: 480px;
 			padding: 0 25px;
@@ -149,8 +156,9 @@
 }
 #parallax{
 	@media screen and (max-width:479px){}
-	@media screen and (max-width:795px) and (min-width:480px){
-		height: 400px !important;
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
+		height: 480px !important;
 		width: 480px;
 		#para-header{
 			width: 400px !important;
@@ -160,17 +168,15 @@
 			height: 0;
 			width: 0;
 		}
-		.header8{
-			font-size: 14px;
-		}
+	}
+	@media screen and (max-width:568px) and (min-width:568px){
+		width: 100%;
 	}
 }
 #services{
 	@media screen and (max-width:479px){}
-	@media screen and (max-width:795px) and (min-width:480px){
-		.header1{
-			font-size: 14px;
-		}
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		.head2-pad{
 			width: 400px;
 			padding: 0 25px;
@@ -179,7 +185,8 @@
 }
 #testimonials{
 	@media screen and (max-width:479px){}
-	@media screen and (max-width: 795px) and (min-width:480px){
+	//@media screen and (max-width: 795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		#car-holder{
 			width: 450px;
 			height: 310px;
@@ -202,15 +209,14 @@
 	}
 }
 #video{
-	@media screen and (max-width:795px) and (min-width:480px){
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		height: 160px !important;
 	}
 }
 #portfolio-cont{
-	@media screen and (max-width:795px) and (min-width:480px){
-		.header1{
-			font-size: 14px;
-		}
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		.head2-pad{
 			width: 410px;
 			padding: 0 25px;
@@ -227,12 +233,12 @@
 		}
 		#works-car-view
 		{
-			#works-car-cont{
-			width: 1680px;
-			li{
-				width: 240px;
+				#works-car-cont{
+				width: 1680px;
+				li{
+					width: 240px;
+				}
 			}
-		}
 		}
 	}
 }
@@ -247,7 +253,8 @@
 	}
 }
 #contact{
-	@media screen and (max-width:795px) and (min-width:480px){
+	//@media screen and (max-width:795px) and (min-width:480px){
+	@media screen and (max-width: 599px) and (min-width:480px){
 		width:480px;
 		#contact-head-cont{
 			.header1,.header2{
@@ -270,4 +277,28 @@
 			padding: 0 50px;
 		}
 	}
+}
+
+.header1{
+	@media screen and (max-width:479px){
+		font-size: 14px;
+	}
+	@media screen and (max-width:599px) and (min-width:480px){
+		font-size: 35px;
+	}
+	@media screen and (max-width:568px) and (min-width:568px){
+		font-size: 35px;
+	}
+}
+.header8{
+	@media screen and (max-width:479px){
+		font-size: 14px;
+	}
+	@media screen and (max-width:599px) and (min-width:480px){
+		font-size:35px;
+	}
+	@media screen and (max-width:568px) and (min-width:568px){
+		font-size: 35px;
+	}	
+
 }

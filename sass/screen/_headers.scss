@@ -222,7 +222,8 @@
 		}
 		.clients-info{
 			height: 369px;
-			width: 480px;
+			//width: 480px;
+			width: 100%;
 		}
 		#works-car-view
 		{
@@ -232,6 +233,16 @@
 				width: 240px;
 			}
 		}
+		}
+	}
+}
+#works-car-view{
+	@media screen and (max-width:568px) and (min-width:568px){
+		#works-car-cont{
+			width: 1960px !important;
+			li{
+				width: 280px !important;
+			}
 		}
 	}
 }

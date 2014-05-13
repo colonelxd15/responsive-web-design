@@ -52,7 +52,6 @@ jQuery(document).ready(function(){
 	//END//
 	function activePage()
 	{
-		scrollPos = 
 		if(scrollVal<=312){
 			$('#navbar-cont li a').css('color','#414141');
 			$('#navbar-cont li a[href="#home-section"]').css('color','#B3D4FC');
@@ -69,7 +68,7 @@ jQuery(document).ready(function(){
 			$('#navbar-cont li a').css('color','#414141');
 			$('#navbar-cont li a[href="#services-section"]').css('color','#B3D4FC');
 		}
-		else if(scrollVal<=8491){
+		else if(scrollVal<=8159){
 			$('#navbar-cont li a').css('color','#414141');
 			$('#navbar-cont li a[href="#portfolio-section"]').css('color','#B3D4FC');
 		}

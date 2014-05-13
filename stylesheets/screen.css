@@ -2002,46 +2002,57 @@ input[type="submit"].light {
   /* line 223, ../sass/screen/_headers.scss */
   #portfolio-cont .clients-info {
     height: 369px;
-    width: 480px;
+    width: 100%;
   }
-  /* line 229, ../sass/screen/_headers.scss */
+  /* line 230, ../sass/screen/_headers.scss */
   #portfolio-cont #works-car-view #works-car-cont {
     width: 1680px;
   }
-  /* line 231, ../sass/screen/_headers.scss */
+  /* line 232, ../sass/screen/_headers.scss */
   #portfolio-cont #works-car-view #works-car-cont li {
     width: 240px;
   }
 }
 
+@media screen and (max-width: 568px) and (min-width: 568px) {
+  /* line 241, ../sass/screen/_headers.scss */
+  #works-car-view #works-car-cont {
+    width: 1960px !important;
+  }
+  /* line 243, ../sass/screen/_headers.scss */
+  #works-car-view #works-car-cont li {
+    width: 280px !important;
+  }
+}
+
 @media screen and (max-width: 795px) and (min-width: 480px) {
-  /* line 238, ../sass/screen/_headers.scss */
+  /* line 249, ../sass/screen/_headers.scss */
   #contact {
     width: 480px;
   }
-  /* line 241, ../sass/screen/_headers.scss */
+  /* line 252, ../sass/screen/_headers.scss */
   #contact #contact-head-cont {
     width: 400px;
     padding: 0 25px;
   }
-  /* line 242, ../sass/screen/_headers.scss */
+  /* line 253, ../sass/screen/_headers.scss */
   #contact #contact-head-cont .header1, #contact #contact-head-cont .header2 {
     font-size: 17px;
   }
-  /* line 245, ../sass/screen/_headers.scss */
+  /* line 256, ../sass/screen/_headers.scss */
   #contact #contact-head-cont .head1-pad-nt {
     padding: 0px 0 60px;
   }
-  /* line 248, ../sass/screen/_headers.scss */
+  /* line 259, ../sass/screen/_headers.scss */
   #contact #contact-head-cont .head2-pad-fb {
     width: 213px;
     margin: 50px auto 115px;
   }
-  /* line 254, ../sass/screen/_headers.scss */
+  /* line 265, ../sass/screen/_headers.scss */
   #contact #contact-head-cont img {
     width: 100%;
   }
-  /* line 258, ../sass/screen/_headers.scss */
+  /* line 269, ../sass/screen/_headers.scss */
   #contact .col-md-4 {
     padding: 0 50px;
   }

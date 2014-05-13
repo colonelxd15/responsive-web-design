@@ -21,8 +21,8 @@
 	overflow: hidden;
 	#featured-slider{
 	height: 400px;
-	width: 2335px;
-	margin-left: -695px;
+	width: 2365px;
+	margin-left: -525px;
 	position: relative;
 		.featured-slider-image{
 			width: 467px;
@@ -105,7 +105,7 @@
 //studio carousel
 #office-carousel-cont{
 			width: 500px;
-			height: 350px;
+			height: 400px;
 			overflow: hidden;
 			margin: auto;
 			@media screen and (max-width: 479px)
@@ -134,7 +134,7 @@
 			
 		}
 #dot-holder{
-	//left: 268px;
+	position: relative;
 }
 .dot-cont{
 	width: 90px;
@@ -163,7 +163,9 @@
 #present{
 	background: #4CDDF3;
 }
-
+#present-test{
+	background: #4CDDF3;
+}
 //arrows//
 #next_image_studio{
 	right: 20px;

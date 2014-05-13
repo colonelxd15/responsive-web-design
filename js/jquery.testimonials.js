@@ -31,7 +31,7 @@ jQuery(document).ready(function(){
 	});
 
 	function move(){
-		$('#testimonials-carousel').animate({'margin-left':(counter * -504) + 'px'},1000);
+		$('#testimonials-carousel').animate({'margin-left':(counter * -100) + '%'},1000);
 		$('#dot-holder-test .dot#present-test').removeAttr('id');
 		$($('#dot-holder-test .dot')[counter]).attr('id','present-test');
 	}	

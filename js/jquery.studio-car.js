@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
 	});
 
 	function move(){
-		$('#office-carousel').animate({'margin-left':(counter * -504) + 'px'},1000);
+		$('#office-carousel').animate({'margin-left':(counter * -100) + '%'},1000);
 		$('#dot-holder .dot#present').removeAttr('id');
 		$($('#dot-holder .dot')[counter]).attr('id','present');
 	}	

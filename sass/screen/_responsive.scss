@@ -1,6 +1,23 @@
 @media screen and (max-width: 479px){
-	.headline{
-		font-size: 20px;
+	#title-cont{
+		.title-2{
+			width: 240px;
+			font-size: 13px;
+			margin-top: -65px;
+		}
+		.headline{
+			font-size: 20px;
+			margin: 40px auto;
+		}
+		#link1{
+			margin: auto;
+		}
+		#head_prev_image{
+			left: 50px;
+		}
+		#head_next_image{
+			right: 105px;
+		}
 	}
 	.title2{
 		width: 240px;
@@ -8,5 +25,268 @@
 	}	
 	#link1{
 		margin: auto;
+	}
+	.header1{
+		font-size: 14px;
+	}
+	.header8{
+		font-size: 14px;
+	}
+	#featured-slider{
+		margin-left: -1022.5px;
+	}
+	#about-section{
+		#about-info-cont{
+			width: 80%;
+			margin: auto;
+		}
+		#office-carousel-cont{
+			height: 275px;
+			width: 290px;
+			#office-carousel{
+				height: 210px;
+				width: 870px;
+				img{
+					height: 210px;
+					width: 290px;
+				}
+			}
+		}
+	}
+	#costum-cont{
+		height: 320px;
+	}
+}
+
+@media screen and (max-width:568) and (min-width:568px){
+	.spacing-top{
+		font-size: 40px;
+		padding: 80px 40px 11px;
+	}
+	#featured-slider{
+		margin-left: -898.5px;
+	}
+
+	#parallax{
+		width: 100%;
+	}
+	#works-car-view{
+		#works-car-cont{
+			width: 1960px !important;
+			li{
+				width: 280px !important;
+			}
+		}
+	}
+}
+@media screen and (max-width:599px) and (min-width:480px){
+	#video{
+		height: 160px !important;
+	}
+	#portfolio-cont{
+		.head2-pad{
+			width: 410px;
+			padding: 0 25px;
+		}
+		#port-btn{
+			width: 100%;
+			padding: 0 40px;
+			height: 80px;
+		}
+		.clients-info{
+			height: 369px;
+			width: 100%;
+		}
+		#works-car-view
+		{
+			#works-car-cont{
+			width: 1680px;
+				li{
+					width: 240px;
+				}
+			}
+		}
+	}
+	#testimonials{
+		#car-holder{
+			width: 450px;
+			height: 310px;
+			#testimonials-carousel{
+				width: 1350px;
+				height: 310px;
+				.t-car-cont{
+					width: 450px;
+					height: 310px;
+					.t-car-conts{
+						width:350px;
+						margin: auto;
+					}
+				}
+			}
+		}
+		#dot-holder-test{
+			bottom: 0 !important;
+		}
+	}
+	#hello{
+		margin-top: 50px;
+	}
+	.headline{
+		font-size: 25px;
+		margin: 37.5px auto;
+	}
+	.title-2{
+		margin-top: -65px;
+		width: 345px;
+	}
+	#head_prev_image{
+		left: 70px;
+	}
+	#head_next_image{
+		right: 100px;
+	}
+	#link1{
+		margin: auto;
+	}
+	#featured-works{
+		.spacing-top{
+			padding: 80px 40px 11px !important;
+			font-size: 40px;
+		}
+		.header{
+			padding: 0px 40px;
+		}
+		#feat-nav{
+			width: 300px;
+			#portfolio-nav{
+				margin: 10px 30px;
+			}
+		}
+	}
+	#featured-slider{
+		margin-left: -942.5px;
+	}
+	#about-info-cont{
+		width: 80%;
+		margin: auto;
+	}
+	#office-carousel-cont{
+			height: 340px;
+			width: 400px;
+			#office-carousel{
+				width: 1200px;
+				height: 280px;
+				img{
+					height: 280px;
+					width:400px;
+				}
+			}
+		}	
+	}
+	#costum-cont{
+		height: 600px;
+		.cont-bg{
+			.pos-abs{
+				top: 40px;	
+			}
+		}
+	}
+	.head2-pad{
+		width: 480px;
+		padding: 0 25px;
+	}
+
+	#parallax{
+		height: 480px !important;
+		width: 480px;
+		#para-header{
+			width: 400px !important;
+			margin: 40px auto 0px !important;
+		}
+		#parallax-bg{
+			height: 0;
+			width: 0;
+		}
+	}
+	#contact{
+		width:480px;
+		#contact-head-cont{
+			width: 400px;
+			padding: 0 25px;
+			.header1,.header2{
+				font-size: 17px;
+			}
+			.head1-pad-nt{
+				padding: 0px 0 60px;
+			}
+			.head2-pad-fb{
+				width: 213px;
+				margin: 50px auto 115px;
+			};
+			img{
+				width: 100%;
+			}
+		}
+		.col-md-4{
+			padding: 0 50px;
+		}
+	//}
+	.header8{
+		font-size:35px;
+	}
+	.header1{
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width:767px) and (min-width:600px){
+	#title-cont{
+		top:50%;
+		.headline{
+			font-size:20px;
+			margin:40px;
+		}
+		.title-2{
+			width: 365px;
+			margin-top:-50px;
+		}
+		#link1{
+			margin:40px auto 0;
+		}
+		#head_prev_image{
+			left:70px;
+			top:10px;
+		}
+		#head_next_image{
+			right:70px;
+			top:10px;
+		}
+	}
+	#featured-works{
+		.spacing-text{
+			padding: 0 40px;
+		}
+		#feat-nav{
+			width: 280px;
+			#portfolio-nav{
+				margin: 10px 20px;
+			}
+		}
+	}
+	#featured-slider-cont{
+		#featured-slider{
+			margin-left: -882.5px;
+		}
+	}
+	#about-section{
+		#office-carousel-cont{
+			#office-carousel{
+				
+			}
+		}
+		#about-info-cont{
+			width:70%;
+			margin:auto;
+		}
 	}
 }

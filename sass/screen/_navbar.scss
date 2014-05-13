@@ -5,6 +5,9 @@
 	.navbar{
 		background-color: #FFF !important;
 		border-color: #F7F7F7 !important;
+		z-index: 1000000;
+		border: none !important;
+		min-height: 75px !important;
 	}
 	.navbar-default{}
 	.container-fluid{
@@ -25,9 +28,14 @@
 					width: 100%;
 				}
 			}
-			.navbar-brand{}
+			.navbar-brand{
+				padding-top: 25px !important;
+			}
 		}
 		.collapse{}
 		.navbar-collapse{}
+	}
+	ul{
+		margin-top: 12px !important;
 	}
 }

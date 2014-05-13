@@ -21,11 +21,11 @@ jQuery(document).ready(function(){
 	});
 
 	//END//
-	$('a').click(function(){
+	$('a').click(function(event){
 		var section;
 		var scrollValue;
 		section = $(this).attr('href');
-		console.log(section);
+		event.preventDefault();
 
 		if(section=='#home-section'){
 			scrollValue = 0;
@@ -89,6 +89,7 @@ jQuery(document).ready(function(){
 			$('#goto-top').css('opacity','0.85');
 		}
 	}
+
 	function ContentUp()
 	{
 		if(scrollVal >= 2230)

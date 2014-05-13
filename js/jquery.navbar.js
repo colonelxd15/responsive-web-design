@@ -5,10 +5,10 @@ jQuery(document).ready(function(){
 	$(window).scroll(function(){
 		scrollVal = $(window).scrollTop();
 		if(height <= scrollVal){
-			$('.nav').css({position:'fixed',top:'0'});
+			$('#nav-properties').css({position:'fixed',top:'0'});
 		}
 		else{
-			$('.nav').css('position','relative');
+			$('#nav-properties').css('position','relative');
 		}
 	});
 

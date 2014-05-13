@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
-	var scrollVal = 0;
+	var scrollVal = '';
+	var scrollPos;
 	
 	$(window).load(function(){
 		scrollVal = $(window).scrollTop();
@@ -28,54 +29,53 @@ jQuery(document).ready(function(){
 		event.preventDefault();
 
 		if(section=='#home-section'){
-			scrollValue = 0;
+			scrollValue = '#head-slider';
 		}
 		else if(section=='#about-section'){
-			scrollValue = 685;
+			scrollValue = '#featured-works';
 		}
 		else if(section=='#team-section'){
-			scrollValue = 3045;
+			scrollValue = '#team';
 		}
 		else if(section=='#services-section'){
-			scrollValue = 5247;
+			scrollValue = '#services';
 		}
 		else if(section=='#portfolio-section'){
-			scrollValue = 7106;
+			scrollValue = '#portfolio-cont';
 		}
 		else if(section=='#contact-section'){
-			scrollValue = 8733;
+			scrollValue = '#contact';
 		}
 			
-		$('html,body').animate({
-			scrollTop:scrollValue
-		},3000);
+		$('html,body').animate({scrollTop: $(scrollValue).offset().top},3000);
 	});	
 	//END//
 	function activePage()
 	{
+		scrollPos = 
 		if(scrollVal<=312){
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#home-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#home-section"]').css('color','#B3D4FC');
 		}
 		else if(scrollVal<=2565){
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#about-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#about-section"]').css('color','#B3D4FC');
 		}
 		else if(scrollVal<=4873){
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#team-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#team-section"]').css('color','#B3D4FC');
 		}
 		else if(scrollVal<=6719){
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#services-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#services-section"]').css('color','#B3D4FC');
 		}
 		else if(scrollVal<=8491){
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#portfolio-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#portfolio-section"]').css('color','#B3D4FC');
 		}
 		else{
-			$('.nav ul li a').css('color','#414141');
-			$('.nav ul li a[href="#contact-section"]').css('color','#B3D4FC');
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#contact-section"]').css('color','#B3D4FC');
 		}
 	};
 

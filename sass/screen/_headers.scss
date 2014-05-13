@@ -82,6 +82,10 @@
 }
 #about-section{
 	@media screen and (max-width:479px){
+		#about-info-cont{
+			width: 80%;
+			margin: auto;
+		}
 		#office-carousel-cont{
 			height: 275px;
 			width: 290px;
@@ -93,10 +97,13 @@
 					width: 290px;
 				}
 			}
-			
 		}
 	}
 	@media screen and (max-width:795px) and (min-width:480px){
+		#about-info-cont{
+			width: 80%;
+			margin: auto;
+		}
 		#office-carousel-cont{
 			height: 340px;
 			width: 400px;
@@ -109,6 +116,7 @@
 				}
 			}
 		}
+			
 	}
 }
 #costum-cont{

@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 		new GMaps({
 		  	div: '#map-cont',
 			controls: false,
-			scrollwhell: false,
+			scrollwheel: false,
 			draggable: true,
 		  	lat: 45.256,
 		  	lng: 19.845

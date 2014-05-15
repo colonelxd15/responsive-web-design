@@ -15,15 +15,12 @@
 <body>
 
 	<!--Home Section-->
-	<!--div id="loader-cont">
-		<div id="loader"><img src="resources/icons/loading.gif"></div>
+	
+	<div id="loader-cont">
+		<img src="resources/icons/loading.gif" id="loader">
 	</div>
-	<div id="goto-top">^</div-->
-	<!--section class="">
-		<div>
-			
-		</div>
-	</section-->
+
+	<div id="goto-top">^</div>
 	
 	<div id="head-slider" class="container">
 		<div id="head-images">
@@ -96,7 +93,7 @@
 			<div class="col-md-2" id="link1">
 				<a href="#about-section">GET STARTED</a>
 			</div>
-			<div class="col-md-5"></div>
+			<!-- <div class="col-md-5"></div> -->
 		</div>	
 	</div>
 <!--End Home Page Title-->	
@@ -384,8 +381,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-4 col-xs-12">
-					<div class="serv-cont">
+				<div class="col-md-offset-1 col-md-2 col-xs-12 serv-cont">
 						<div class="tooltip">
 						<ul>
 							<li><span class="check"></span>Facebook Apps and Pages</li>
@@ -395,11 +391,11 @@
 
 						<span class="arrow-down">
 					</div>
-					<div class="circle" id="tool"></div>
+					<div class="circle tool"></div>
 					<p class="serv-label">UX/UI</p>
 				</div>
-				</div>
-				<div class="col-md-2 col-sm-4 col-xs-12">
+
+				<div class="col-md-2 col-xs-12 serv-cont">
 					<div class="tooltip">
 					<ul>
 						<li><span class="check"></span>Facebook Apps and Pages</li>
@@ -408,10 +404,10 @@
 					</ul>
 					<span class="arrow-down">
 				</div>
-					<div class="circle" id="diamond"></div>
+					<div class="circle diamond"></div>
 					<p class="serv-label">DESIGN</p>
 				</div>
-				<div class="col-md-2 col-sm-offset-2 col-sm-4 col-xs-12">
+				<div class="col-md-2 col-xs-12 serv-cont">
 					<div class="tooltip">
 					<ul>
 						<li><span class="check"></span>Facebook Apps and Pages</li>
@@ -420,10 +416,10 @@
 					</ul>
 					<span class="arrow-down">
 					</div>
-					<div class="circle" id="globe"></div>
+					<div class="circle globe"></div>
 					<p class="serv-label">IDENTITY</p>
 				</div>
-				<div class="col-md-2 col-sm-4 col-xs-12">
+				<div class="col-md-2 col-xs-12 serv-cont">
 					<div class="tooltip">
 					<ul>
 						<li><span class="check"></span>Facebook Apps and Pages</li>
@@ -432,10 +428,10 @@
 					</ul>
 					<span class="arrow-down">
 				</div>
-					<div class="circle" id="pin"></div>
+					<div class="circle pin"></div>
 					<p class="serv-label">SOCIAL</p>
 				</div>
-				<div class="col-md-2 col-sm-offset-2 col-sm-4 col-xs-12">
+				<div class="col-md-2 col-xs-12 serv-cont">
 				<div class="tooltip">
 					<ul>
 						<li><span class="check"></span>Facebook Apps and Pages</li>
@@ -444,7 +440,7 @@
 					</ul>
 					<span class="arrow-down">
 				</div>
-				<div class="circle" id="clock"></div>
+				<div class="circle clock"></div>
 				<p class="serv-label">MOTION</p>
 				</div>
 			</div>
@@ -566,6 +562,23 @@
 				</div>
 			</div>
 		</div>
+		<section id="port-desc">
+			<div class="port-desc-nav">
+				<div class="port-desc-nav-cont">
+					<div class="port-prev-btn"></div>
+					<div class="port-close-btn"></div>
+					<div class="port-next-btn"></div>
+				</div>
+			</div>
+			<div id="port-desc-cont"></div>
+			<div class="port-desc-nav">
+				<div class="port-desc-nav-cont">
+					<div class="port-prev-btn"></div>
+					<div class="port-close-btn"></div>
+					<div class="port-next-btn"></div>
+				</div>
+			</div>
+		</section>
 		<section class="container-fluid" id="port-img">
 			<div class="clients-info graphic">
 						<img src="resources/thumb/thumb-01.jpg">
@@ -675,41 +688,74 @@
 			<div class="col-md-4">
 				<p class="header4">CONTACT</p>
 				<p class="header3">Visit Our Office</p>
-				<span><img src="resources/icons/adress-ico.png">
-					<p class="contact-text-1">Adress:</p>
-					<p class="contact-text-2 less">1234 Street Name, City Name</p>
-				</span>
-				<span><img src="resources/icons/phone-ico.png">
-					<p class="contact-text-1">Phone:</p>
-					<p class="contact-text-2 less">(123) 456-7890</p>
-				</span>
-				<span><img src="resources/icons/mail-ico.png">
-					<p class="contact-text-1">Email:</p>
-					<p class="contact-text-2 less">theme@solido.com</p>
-				</span>
+				<div class="entries">
+					<span>
+						<img src="resources/icons/adress-ico.png">
+						<p class="contact-text-1">Adress:</p>
+					</span>
+					<span>
+						<p class="contact-text-2 less">1234 Street Name, City Name</p>
+					</span>
+				</div>
+				<div class="entries">
+					<span>
+						<img src="resources/icons/phone-ico.png">
+						<p class="contact-text-1">Phone:</p>
+					</span>
+					<span>
+						<p class="contact-text-2 less">(123) 456-7890</p>
+					</span>
+				</div>
+				<div class="entries">
+					<span><img src="resources/icons/mail-ico.png">
+						<p class="contact-text-1">Email:</p>
+					</span>
+					<span>
+						<p class="contact-text-2 less">theme@solido.com</p>
+					</span>
+				</div>
 			</div>
 			<div class="col-md-4">
 				<p class="header4">CONTACT</p>
 					<p class="header3">Business Hours</p>
-					<span><img src="resources/icons/hours-ico.png">
-						<p class="contact-text-1">Mon.-Fri.</p>
-						<p class="contact-text-2 less">8am to 5pm</p>
-					</span>
-					<span><img src="resources/icons/hours-ico.png">
-						<p class="contact-text-1">Sat.</p>
-						<p class="contact-text-2 more" >8am to 11am</p>
-					</span>
-					<span><img src="resources/icons/hours-ico.png">
-						<p class="contact-text-1">Sun</p>
-						<p class="contact-text-2 more">Closed</p>
-					</span>
-			</div>
+					<div class="entries">
+						<span><img src="resources/icons/hours-ico.png">
+							<p class="contact-text-1">Mon.-Fri.</p>
+						</span>
+						<span>
+							<p class="contact-text-2 less">8am to 5pm</p>
+						</span>
+					</div>
+					<div class="entries">
+						<span>
+							<img src="resources/icons/hours-ico.png">
+							<p class="contact-text-1">Sat.</p>
+						</span>
+						<span>
+							<p class="contact-text-2" >8am to 11am</p>
+						</span>
+					</div>
+					<div class="entries">
+						<span><img src="resources/icons/hours-ico.png">
+							<p class="contact-text-1">Sun</p>
+						</span>
+						<span>
+							<p class="contact-text-2 more">Closed</p>
+						</span>
+					</div>
+				</div>
 			<div class="col-md-4 col-sm-12">
 				<form action="" method="">
-					<input type="text" value="FULL NAME" name="fName">
-					<input type="text" value="YOUR EMAIL" name="email">
-					<textarea rows="6">TYPE MESSAGE</textarea>
-					<input type="submit" value="SEND MESSAGE" class="light">
+					<input type="text" value="FULL NAME" name="fName" onclick="if(this.value=='FULL NAME') this.value=''" onblur="if(this.value=='') this.value='FULL NAME'">
+					<input type="text" value="YOUR EMAIL" name="email"
+					onclick="if(this.value=='YOUR EMAIL') this.value=''" onblur="if(this.value=='') this.value='YOUR EMAIL'">
+					<textarea name="message" rows="6" onclick="if(this.value=='TYPE MESSAGE') this.value=''" onblur="if(this.value=='') this.value='TYPE MESSAGE'">TYPE MESSAGE</textarea>
+					<button id="submit" class="light">SEND MESSAGE</button>
+					<div class="notifications">
+	                    <div id="contactFormSent" class="formSent alert alert-success" style="display: block;">
+		                     <strong>Your Message Has Been Sent!</strong> Thank you for contacting us.
+		                </div>	
+	                </div>
 				</form>
 			</div>
 		</div> 
@@ -729,12 +775,14 @@
 		</div>
 		<div class="row foot-text">2013 @ Solido. All rights reserved.</div>
 	</section>
+	
 	<script src="js/jquery.navbar.js"></script>
 	
-	<!--script src="js/jquery.load.js"></script-->
+	<script src="js/jquery.load.js"></script>
 	<!--script src="js/jquery.screen.js"></script-->
 	<script src="js/jquery.scroll.js"></script>
-	<script src="js/jquery.map.js"></script>
+	<script src="js/jquery.show-port.js"></script>
+	
 	<script src="js/jquery.carousel-head.js"></script>
 	<script src="js/jquery.services-tooltip.js"></script>
 	<script src="js/jquery.headline.js"></script>
@@ -746,5 +794,6 @@
 	<script src="js/jquery.portfolio.js"></script>
 	<script src="js/jquery.portfolio-car.js"></script>
 	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery.map.js"></script>
 </body>
 </html>

@@ -2,27 +2,26 @@ jQuery(document).ready(function(){
 	var item;
 	$('.port-btn-prop').click(function(){
 		item = $(this).attr('id');
-		console.log(item);
 		filter(item);
 	});
 	
 	function filter(prop){
 		$('.clients-info').css('display','block');
-		if(prop == 'graph'){
-			$('.photo,.web,.motion').css('display','none');
-			$('.graphic').animate('display','block');
+		if(prop == 'resi'){
+			$('.com,.apa,.oth').css('display','none');
+			$('.res').animate('display','block');
 		}
-		else if(prop=='photo'){
-			$('.graphic,.web,.motion').css('display','none');
-			$('.photo').css('display','block');
+		else if(prop=='comm'){
+			$('.res,.apa,.oth').css('display','none');
+			$('.com').css('display','block');
 		}
-		else if(prop=='web'){
-			$('.graphic,.photo,.motion').css('display','none');
-			$('.web').css('display','block');
+		else if(prop=='apar'){
+			$('.res,.com,.oth').css('display','none');
+			$('.apa').css('display','block');
 		}
-		else if(prop=='motion'){
-			$('.graphic,.photo,.web').css('display','none');
-			$('.motion').css('display','block');
+		else if(prop=='othe'){
+			$('.res,.com,.apa').css('display','none');
+			$('.oth').css('display','block');
 		}
 		else{
 			$('.clients-info').css('display','block');

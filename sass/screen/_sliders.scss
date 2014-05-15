@@ -20,10 +20,10 @@
 	height: 400px;
 	overflow: hidden;
 	#featured-slider{
-	height: 400px;
-	width: 2365px;
-	margin-left: -525px;
-	position: relative;
+		height: 400px;
+		width: 2365px;
+		margin-left: -525px;
+		position: relative;
 		.featured-slider-image{
 			width: 467px;
 			height: 266px;
@@ -60,79 +60,48 @@
 					}
 				}
 			}
-			img{}
-			.featured-desc{
-				background: #FFF;
-				height: 20px;
-				padding: 45px 100px;
-				text-align: center;
+			img{
+				width: 100%;
+				height:100%;
 			}
+		
 			&:hover{
 				.image-overlay{
+					@include transition($trans:$transition);
 					height:266px;
 					padding: 85px 0px 0px 0px;
-					-webkit-transition: all 0.2s ease-out;
-					-moz-transition: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;	
 					opacity: 0.85;
 					.featured-meta{
+						@include transition($trans:$transition);	
 						margin-bottom: 75px;
-						-webkit-transition: all 0.2s ease-out;
-						-moz-transition: all 0.2s ease-out;
-						-ms-transition: all 0.2s ease-out;
-						-o-transition: all 0.2s ease-out;
-						transition: all 0.2s ease-out;	
 					}
 				}
 
 				.featured-desc{
-					-webkit-transition: all 0.2s ease-out;
-					-moz-transitiosn: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;	
+					@include transition($trans:$transition);	
 					color: #FFF;
-					background: #4CDDF3;
+					background: $themecolor;
 				}
 			}
 		}
 	}
 }
 
-
-//studio carousel
 #office-carousel-cont{
-			width: 500px;
-			height: 400px;
-			overflow: hidden;
-			margin: auto;
-			@media screen and (max-width: 479px)
-			{
-				height: 275px;
-				width: 290px;
-			}
-			#office-carousel{
-				width: 1510px;
-				height: 350px;
-				@media screen and (max-width: 479px)
-				{
-					height: 210px;
-					width: 870px;
-				}
-				img{
-					float: left;
-					margin: 0px;
-					@media screen and (max-width: 479px)
-					{
-						height: 210px;
-						width: 290px;
-					}
-				}
-			}
-			
+	width: 500px;
+	height: 400px;
+	overflow: hidden;
+	margin: auto;
+	#office-carousel{
+		width: 1510px;
+		height: 350px;		
+		img{
+			float: left;
+			margin: 0px;
 		}
+	}			
+}
+
 #dot-holder{
 	position: relative;
 }
@@ -142,42 +111,26 @@
 	position: relative;
 	margin: auto;
 	left: 0px !important;
-	.dot{
-		height: 10px;
-		width: 10px;
-		border-radius: 10px;
-		border: 1px solid #4CDDF3;
-		float: left;
-		margin: 30px 10px 0px 10px;
-		z-index: 1000;
-		&:hover{
-			background: #4CDDF3;
-		}
-	}
-	@media screen and (max-width:479px){
-		width: 120px;
-		.dot{
-			height: 15px;
-			width: 15px;
-			border-radius: 50%;
-		}
-	}
-	@media screen and (max-width:795px) and (min-width:480px){
-		width: 120px;
-		.dot{
-			height: 15px;
-			width: 15px;
-			border-radius: 50%;
-		}		
+}
+.dot{
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	border: 1px solid $themecolor;
+	float: left;
+	margin: 30px 10px 0px 10px;
+	z-index: 1000;
+	&:hover{
+		background: $themecolor;
 	}
 }
 #present{
-	background: #4CDDF3;
+	background: $themecolor;
 }
 #present-test{
-	background: #4CDDF3;
+	background: $themecolor;
 }
-//arrows//
+
 #next_image_studio{
 	right: 20px;
 	top: 250px;
@@ -186,54 +139,31 @@
 	left: 20px;
 	top: 250px;
 }
-//
+
 #testimonials-carousel{
 	width: 1500px;
 	height: 265px;
 	overflow: hidden;
-	@media screen and (max-width:479px){
-		width: 870px;
-		#test-hold-np{
-			padding: 0px !important;
-		}
-	}
 }
 #car-holder{
 	width: 500px;
 	height: 265px;
 	overflow: hidden;
 	margin: auto;
-	@media screen and (max-width: 479px){
-		width: 290px;
-	}
 }
 .t-car-cont{
 	height: 265px;
 	width: 500px;
 	float: left;
-	.t-car-conts{
-		height: 130px;
-		padding: 0px 20px 35px 20px;
-		border-bottom: solid 1px #B3D4FC;
-		&:last-child{
-			padding: 35px 20px 0px 20px;
-		}
+}
+.t-car-conts{
+	height: 130px;
+	padding: 0px 20px 35px 20px;
+	border-bottom: solid 1px #B3D4FC;
+	&:last-child{
+		padding: 35px 20px 0px 20px;
 	}
-	.t-car-conts:last-child{
-		border-bottom: none;
-	}
-	@media screen and (max-width:479px){
-		width: 290px;
-
-		.t-car-conts{
-			padding: 0px 0px 0px;
-			p{
-				width: 290px;
-				font-size: 13px;
-			}
-		}
-		.t-car-conts:last-child{
-			padding: 5px 0px 0px;
-		}
-	}
+}
+.t-car-conts:last-child{
+	border-bottom: none;
 }

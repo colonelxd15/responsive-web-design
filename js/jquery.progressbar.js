@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
 
 	$(window).scroll(function(){
 		scrollVal  = $(window).scrollTop();
-		if(scrollVal >= 5358)
+		if(scrollVal >= ($('#testimonials').offset().top-350))
 		{
 			$('.prog-fill#w-60').animate({'width':'60%'},2000);
 			$('.prog-fill#w-70').animate({'width':'70%'},2000);

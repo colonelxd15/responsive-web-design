@@ -9,33 +9,62 @@
 		border: none !important;
 		min-height: 75px !important;
 	}
-	.navbar-default{}
-	.container-fluid{
-		.navbar-header{
-			.navbar-toggle{
-				float: right;
-				height: 75px !important;
-				margin: 0px !important;
-				width: 50px !important;
-				padding: 0px !important;
-				border: 0px !important;
-				border-radius: 0px !important;
-				img{
-					top: 0px;
-					left: 0px;
-					position: absolute;
-					height: 100%;
-					width: 100%;
-				}
-			}
-			.navbar-brand{
-				padding-top: 25px !important;
+	.navbar-header{
+		.navbar-toggle{
+			float: right;
+			height: 75px !important;
+			margin: 0px !important;
+			width: 50px !important;
+			padding: 0px !important;
+			border: 0px !important;
+			border-radius: 0px !important;
+			img{
+				top: 0px;
+				left: 0px;
+				position: absolute;
+				height: 100%;
+				width: 100%;
 			}
 		}
-		.collapse{}
-		.navbar-collapse{}
+		.navbar-brand{
+			padding-top: 25px !important;
+		}
 	}
 	ul{
+		padding: 0px 75px;
 		margin-top: 12px !important;
+	}
+}
+#port-desc{
+	.port-desc-nav{
+		width: 100%;
+		height: 60px;
+		.port-desc-nav-cont{
+			width: 210px;
+			margin: 20px auto;
+			margin: auto;
+			.port-prev-btn,
+			.port-close-btn,
+			.port-next-btn{
+				height: 50px;
+				width: 50px;
+				float: left;
+				margin: 0 10px;
+			}
+			.port-prev-btn,
+			.port-next-btn{
+				border: solid 2px #DDD;
+				border-radius: 50%; 
+			}
+			.port-prev-btn{
+				background: url('../resources/icons/color-icons.png') #F7F7F7 -218px 46px;
+			}
+			.port-next-btn{
+				background: url('../resources/icons/color-icons.png') #F7F7F7 -307px 46px;	
+			}
+			.port-close-btn{
+				background: url('../resources/icons/color-icons.png') #F7F7F7 -262px 50px;		
+			}
+		}
 	}
 }

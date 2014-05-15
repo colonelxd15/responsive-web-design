@@ -39,6 +39,15 @@
 		#about-info-cont{
 			width: 80%;
 			margin: auto;
+			img{
+				margin: 0 30px;
+				float: nonel
+			}
+			.title{
+				font-size: 14px;
+				text-align: center;
+				margin-top: 30px;
+			}
 		}
 		#office-carousel-cont{
 			height: 275px;
@@ -55,6 +64,106 @@
 	}
 	#costum-cont{
 		height: 320px;
+	}
+	#port-btn{
+		width: 100%;
+	}
+	#video{
+		height: 160px;
+	}
+	#feat-nav{
+		width: 300px;
+	}
+	#contact{
+		width: 100%;
+		#contact-head-cont{
+			width: 100%;
+			img{
+				display: none;
+			}
+		}
+		p.contact-text-2{
+			font-size: 13px;
+		}
+	}
+	.pos-abs{
+		top: 40px;
+		header.header1{
+			font-size: 14px !important;
+		}
+	}
+	#facts{
+		padding-bottom: 0px;
+	}
+	#parallax{
+		height: 255px;
+		#para-header{
+			width: 300px;
+			height: 100px;
+			margin: 40px auto 0px;
+			.header8{
+				font-size: 14px;
+			}
+			.header4{
+				margin: 40px auto;
+			}
+		}
+	}
+	.clients-info{
+		width: 320px;
+		height: 248px;
+	}
+	#works-car-cont{
+		ul{
+			margin: 0px;
+		}
+	}
+	#portfolio-nav{
+		margin: 10px 30px;
+	}
+	.head1-pad{
+		padding: 0px 40px 50px;
+	}
+	.head2-pad{
+		padding: 0px 25px;
+		width: auto;
+	}
+	.head1-pad-nt{
+		padding: 100px 0px 60px;
+	}
+	.prog-bg{
+		width: 100%;
+	}
+	.t-car-cont{
+		width: 290px;
+
+		.t-car-conts{
+			padding: 0px 0px 0px;
+			p{
+				width: 290px;
+				font-size: 13px;
+			}
+		}
+		.t-car-conts:last-child{
+			padding: 5px 0px 0px;
+		}
+	}
+	#car-holder{
+		width: 290px;
+	}
+	#testimonials-carousel{
+		width: 870px;
+		#test-hold-np{
+			padding: 0px !important;
+		}
+	}
+	.dot-cont{
+		width: 120px;
+		.dot{
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+		}
 	}
 }
 
@@ -78,8 +187,28 @@
 			}
 		}
 	}
+	#office-carousel-cont{
+	height: 275px;
+	width: 290px;
+	#office-carousel{
+		height: 210px;
+		width: 870px;
+		img{
+			height: 210px;
+			width: 290px;
+		}		
+	}
+}
 }
 @media screen and (max-width:599px) and (min-width:480px){
+	.dot-cont{
+		width: 120px;
+		.dot{
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+		}		
+	}
 	#video{
 		height: 160px !important;
 	}
@@ -167,8 +296,16 @@
 		margin-left: -942.5px;
 	}
 	#about-info-cont{
-		width: 80%;
+		width: 80%; 
 		margin: auto;
+		img{
+			margin: 0px 20px 20px 0px;
+		}
+		.title{
+			font-size: 14px;
+			line-height: 14px;
+			margin: 0px 0px 20px 0px;
+		}
 	}
 	#office-carousel-cont{
 			height: 340px;
@@ -182,7 +319,6 @@
 				}
 			}
 		}	
-	}
 	#costum-cont{
 		height: 600px;
 		.cont-bg{
@@ -238,7 +374,7 @@
 		font-size: 35px;
 	}
 }
-
+}
 @media screen and (max-width:767px) and (min-width:600px){
 	#title-cont{
 		top:50%;

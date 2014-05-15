@@ -1,0 +1,13 @@
+$transition: all 0.2s ease-out;
+$transition2: all 300ms ease;
+$themecolor: #4CDDF3;
+$bgcolorlight: #FFF;
+$bgcolordark: #F7F7F7;
+
+@mixin transition($trans){
+	-webkit-transition: $trans;
+	   -moz-transition: $trans;
+	    -ms-transition: $trans;
+	     -o-transition: $trans;
+		    transition: $trans;
+}

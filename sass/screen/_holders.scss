@@ -1,6 +1,6 @@
 #featured-works{
 	position: relative;
-	background: #F7F7F7;
+	background: $bgcolordark;
 }
 #about-section{
 	padding-top: 80px;
@@ -18,22 +18,35 @@
 	height: 700px;
 	width: 100%;
 	position: relative;
-	@media screen and (max-width:479px){
-		height: 160px;
-	}
+}
+#port-desc{
+	height: 700px;
+	width: 100%;
+	position: relative;
+	display: none;
 }
 #portfolio-cont{
 	padding: 50px 0px 85px 0px;
 	position: relative;
-	background: #F7F7F7;
+	background: $bgcolordark;
+}
+#port-desc-holder{
+	width: 500px;
+	height: auto;
+	margin: auto;
+	.img-zoomed{
+		width: 300px;
+		height: 300px;
+		margin: 0 100px 30px;
+	}
+	.header2{
+		text-align: justify;
+	}
 }
 #feat-nav{
 	width: 460px;
 	height: 60px;
 	margin: 30px auto 80px;
-	@media screen and (max-width: 479px){
-		width: 300px;
-	}
 }
 #test-holder-np{
 	padding: 0px;
@@ -43,37 +56,13 @@
 	width: 1180px;
 	margin: auto;
 	span{
-		width: 100%;
-		margin: 10px 0px;
-		float: left;
 		img{
 			margin: 0px 5px 0px 0px;
-		}
-		.less{
-			padding-left: 27px;
-		}
-		.more{
-			padding-left: 60px;
 		}
 		img,p{
 			float: left;
 		}
 				
-	}
-	@media screen and (max-width:479px){
-		width: 100%;
-		#contact-head-cont{
-			width: 100%;
-			img{
-				display: none;
-			}
-		}
-		p.contact-text-2{
-			font-size: 13px;
-		}
-	}
-	span:last-child{
-		margin-bottom: 50px;
 	}
 }
 #contact-head-cont{
@@ -127,16 +116,10 @@
 	.header1{
 		margin: 20px 0px;
 	}
-	@media screen and (max-width:479px){
-		top: 40px;
-		header.header1{
-			font-size: 14px !important;
-		}
-	}
 }
 
 #team{
-	background: #F7F7F7;
+	background: $bgcolordark;
 	position: relative;
 	padding: 50px 0px 85px;
 	.team-prof{
@@ -175,7 +158,6 @@
 					letter-spacing: 1px;
 					font-weight: 400;
 					color: #FFF;
-					text-align: center;
 					bottom: 0px;
 					text-align: center;
 					width: 100%;
@@ -219,36 +201,20 @@
 	}
 		&:hover{
 			.team-prof-overlay{
+				@include transition($trans:$transition);
 				opacity: 0.85;
-				-webkit-transition: all 0.2s ease-out;
-					-moz-transition: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;	
 				.email{
-					-webkit-transition: all 0.2s ease-out;
-					-moz-transition: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;	
+					@include transition($trans:$transition);
 					top: 75px;
 				}
 				.email-add{
+					@include transition($trans:$transition);
 					bottom: 65px;
-					-webkit-transition: all 0.2s ease-out;
-					-moz-transition: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;	
 				}
 			}
 			.profile{
-				-webkit-transition: all 0.2s ease-out;
-				-moz-transition: all 0.2s ease-out;
-				-ms-transition: all 0.2s ease-out;
-				-o-transition: all 0.2s ease-out;
-				transition: all 0.2s ease-out;
-				background: #4CDDF3;
+				@include transition($trans:$transition);
+				background: $themecolor;
 				.header5{
 					color: #FFF;
 				}
@@ -275,21 +241,18 @@
 		margin: 20px auto;
 		padding: 20px 0 100px;
 	}
-	@media screen and (max-width:479px){
-		padding-bottom: 0px;
-	}
 }
 #tweet{
-	background: url('../resources/icons/facts.png') 0 0 #4CDDF3;
+	background: url('../resources/icons/facts.png') 0 0 $themecolor;
 }
 #client{
-	background: url('../resources/icons/facts.png') -73px 0px #4CDDF3;
+	background: url('../resources/icons/facts.png') -73px 0px $themecolor;
 }
 #project{
-	background: url('../resources/icons/facts.png') -146px 0px #4CDDF3;
+	background: url('../resources/icons/facts.png') -146px 0px $themecolor;
 }
 #coffee{
-	background: url('../resources/icons/facts.png') -219px 0px #4CDDF3;
+	background: url('../resources/icons/facts.png') -219px 0px $themecolor;
 }
 #tweet,
 #client,
@@ -301,7 +264,7 @@
 }
 
 #parallax{
-	background: url('../resources/parallax/parallax-02.png') #4CDDF3;
+	background: url('../resources/parallax/parallax-02.png') $themecolor;
 	position: relative;
 	overflow: hidden;
 	height: 625px;
@@ -327,25 +290,11 @@
 			}	
 		}
 	}
-	@media screen and (max-width: 479px){
-		height: 255px;
-		#para-header{
-			width: 300px;
-			height: 100px;
-			margin: 40px auto 0px;
-			.header8{
-				font-size: 14px;
-			}
-			.header4{
-				margin: 40px auto;
-			}
-		}
-	}
 }
 
 #services{
 	padding: 50px 0px 85px;
-	background: #F7F7F7;
+	background: $bgcolordark;
 }
 .circle{
 	height: 110px;
@@ -353,72 +302,7 @@
 	border-radius: 110px;			
 	margin: 10px auto 30px;
 }
-#tool{
-	background: url('../resources/icons/sl-icons.png') 0px 0px #4CDDF3;
-}
-#diamond{
-	background: url('../resources/icons/sl-icons.png') -110px 0px #4CDDF3;	
-}
-#globe{
-	background: url('../resources/icons/sl-icons.png') -220px 0px #4CDDF3;
-}
-#pin{
-	background: url('../resources/icons/sl-icons.png') -330px 0px #4CDDF3;
-}
-#clock{
-	background: url('../resources/icons/sl-icons.png') -440px 0px #4CDDF3;
-}
-#tool,#diamond,#globe,#pin,#clock{
-	&:hover{
-		background-color: #E6E6E6;
-	}
-}
-.tooltip{
-	display: none;
-	position: absolute;
-	width: 220px;
-	background: #000;
-	padding: 5px 16px;
-	margin-bottom: 30px;
-	bottom: 100%;
-	left: 50%;
-	margin-left: -130px;
-	top: auto;
-	ul{
-		color: #FFF;
-		font-size: 14px;
-		text-align: left;
-		font-weight: 300px;
-		font-family: 'Open Sans', sans-serif;
-		line-height: 30px;
-		li{
-			span{
-				height: 15px;
-				width: 15px;
-				background: url('../resources/icons/ckeck.png') no-repeat #4CDDF3;
-				float: left;
-				margin: 7px 7px -3px 0px;
-			}	
-			p{
-				float: left;
-			}
-		}
-	}
-			
-}
 
-.arrow-down{
-	position: absolute;
-	left: 50%;
-	bottom: -8px;
-	margin-left: -8px;
-	display: none;
-	width: 0px;
-	height: 0px;
-	border-left: 8px solid rgba(0, 0, 0, 0);
-	border-right: 8px solid rgba(0, 0, 0, 0);
-	border-top: 8px solid rgba(6, 6, 6, 0.85);
-}
 .clients-info{
 	position: relative;
 	float: left;
@@ -452,20 +336,13 @@
 		}
 	}
 	&:hover{
-		-webkit-transition: all 300ms ease;
-		-moz-transition: all 300ms ease;
-		-ms-transition: all 300ms ease;
-		-o-transition: all 300ms ease;
-		transition: all 300ms ease;
+		@include transition($trans:$transition2);
 		section{
 			opacity: 1;
 
 		}
 	}
-	@media screen and (max-width:479px){
-		width: 320px;
-		height: 248px;
-	}
+
 }
 #port-btn{
 	height: 30px;
@@ -481,13 +358,10 @@
 		float: left;
 		border-radius: 3px;
 			&:hover{
-				background: #4CDDF3;
+				background: $themecolor;
 				color: #FFF;
 			}
 		}
-	}
-	@media screen and (max-width:479px){
-		width: 100%;
 	}
 }
 #port-img{
@@ -511,18 +385,6 @@
 			height: 100%;
 		}
 	}
-	@media screen and (max-width: 479px){
-		ul{
-			margin: 0px;
-		}
-	}
+
 }
 
-
-/*@mixin transition($dir, $time, $trans){
-	-webkit-transition: $dir $time $trans;
-	   -moz-transition: $dir $time $trans;
-	    -ms-transition: $dir $time $trans;
-	     -o-transition: $dir $time $trans;
-		    transition: $dir $time $trans;
-}*/

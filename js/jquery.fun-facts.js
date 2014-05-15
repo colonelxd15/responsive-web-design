@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
 	var executed = false;
 	$(window).scroll(function(){
 		scrollVal = $(window).scrollTop();
-		if((scrollVal >= 3518) && !executed){
+		if((scrollVal >= $('#facts').offset().top-350) && !executed){
 			$('p.header7#tweet-fact').countTo({  
 				from: 00,
       			to: 99,

@@ -3,12 +3,12 @@ jQuery(document).ready(function(){
 	var dot;
 	var dotNum;
 
-	$('.cont-serv:last-child').hover(function(){
-		$('#prev_image_test').animate({'opacity':'1','left':'5px'});
-		$('#next_image_test').animate({'opacity':'1','right':'5px'});
+	$('#test-holder-np').hover(function(){
+		$('#prev_image_test').animate({'opacity':'1','left':'30px'});
+		$('#next_image_test').animate({'opacity':'1','right':'30px'});
 	},function(){
-		$('#prev_image_test').animate({'opacity':'0','left':'0px'});
-		$('#next_image_test').animate({'opacity':'0','right':'0px'});
+		$('#prev_image_test').animate({'opacity':'0','left':'20px'});
+		$('#next_image_test').animate({'opacity':'0','right':'20px'});
 	});
 
 	$('#dot-holder-test .dot').click(function(){

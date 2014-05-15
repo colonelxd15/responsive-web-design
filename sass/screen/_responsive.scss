@@ -165,9 +165,31 @@
 			border-radius: 50%;
 		}
 	}
+
+	#port-desc{
+		.port-desc-nav{
+			margin: 20px auto;
+		}
+		#port-desc-cont{
+			#port-desc-holder{
+				width: 250px;	
+				img{
+					width: 200px;
+					height: 200px;
+					margin: 20px 25px 30px;
+				}	
+			}
+		}
+	}
+
+
+
 }
 
 @media screen and (max-width:568) and (min-width:568px){
+	.img-zoomed{
+		margin: 0 120px 20px;
+	}
 	.spacing-top{
 		font-size: 40px;
 		padding: 80px 40px 11px;
@@ -201,6 +223,15 @@
 }
 }
 @media screen and (max-width:599px) and (min-width:480px){
+	#port-desc-holder{
+		width: 100%;
+		padding: 0 20px;
+		.img-zoomed{
+			width: 250px;
+			height: 250px;
+			margin: 0px 80px 20px;
+		}
+	}
 	.dot-cont{
 		width: 120px;
 		.dot{
@@ -376,6 +407,7 @@
 }
 }
 @media screen and (max-width:767px) and (min-width:600px){
+
 	#title-cont{
 		top:50%;
 		.headline{
@@ -423,6 +455,53 @@
 		#about-info-cont{
 			width:70%;
 			margin:auto;
+		}
+	}
+	.dot-cont{
+		width: 120px;
+		.dot{
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+		}
+	}
+	#costum-cont{
+		height: 600px;
+	}
+	.head2-pad{
+		width: auto;
+		padding: 0 40px;
+	}
+	#parallax{
+		height: 400px;
+	}
+	.img-zoomed{
+		margin: 0 100px 20px;
+	}
+	.clients-info{
+		width: 600px;
+		height: 425px;
+	}
+	#contact{
+		#contact-head-cont{
+			width: auto;
+			img{
+				width: 80%;
+				margin-left: 10%;
+			}
+		}
+	}
+	.head2-pad-fb{
+		width: auto;
+		padding: 0 178px;
+	}
+	#map{
+		height: 500px;
+	}
+	#works-car-cont{
+		width: 2100px;
+		li{
+			width: 300px;
 		}
 	}
 }

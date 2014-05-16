@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 	$('#goto-top').click(function(){
 		$('html, body').animate({
 			scrollTop:'0'
-		},3000);
+		},1000);
 	});
 
 	//END//
@@ -47,7 +47,7 @@ jQuery(document).ready(function(){
 			scrollValue = '#contact';
 		}
 			
-		$('html,body').animate({scrollTop: $(scrollValue).offset().top},3000);
+		$('html,body').animate({scrollTop: $(scrollValue).offset().top},1000);
 	});	
 	//END//
 	function activePage()
@@ -82,7 +82,7 @@ jQuery(document).ready(function(){
 	};
 
 	function hideGotoTop(){
-		if(scrollVal<= ($('#about-section').offset().top - 350))
+		if(scrollVal <= ($('#nav-wrapper').offset().top - 40))
 		{
 			$('#goto-top').css('opacity','0');
 		}
@@ -94,7 +94,7 @@ jQuery(document).ready(function(){
 
 	function ContentUp()
 	{
-		if(scrollVal >= 2230)
+		if(scrollVal >= ($('#costum-cont').offset().top - 300))
 		{
 			$('.cont-bg-2').animate({'bottom':'0%'}
 				,500
@@ -103,9 +103,9 @@ jQuery(document).ready(function(){
 					,500);
 			});
 		}
-		if(scrollVal >= 4320)
+		if(scrollVal >= ($('#parallax').offset().top - 300))
 		{
-			$('#parallax-layer-1').animate({'bottom':'0%'},3000);
+			$('#parallax-layer-1').animate({'bottom':'0%'},500);
 		}
 	}
 });

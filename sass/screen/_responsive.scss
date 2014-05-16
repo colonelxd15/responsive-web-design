@@ -153,7 +153,7 @@
 	}
 	#testimonials-carousel{
 		width: 870px;
-		#test-hold-np{
+		#test-holder-np{
 			padding: 0px !important;
 		}
 	}
@@ -181,9 +181,6 @@
 			}
 		}
 	}
-
-
-
 }
 
 @media screen and (max-width:568) and (min-width:568px){
@@ -221,6 +218,13 @@
 		}		
 	}
 }
+	.less-pad{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#port-btn{
+		width: 100%;
+	}
 }
 @media screen and (max-width:599px) and (min-width:480px){
 	#port-desc-holder{
@@ -359,13 +363,13 @@
 		}
 	}
 	.head2-pad{
-		width: 480px;
-		padding: 0 25px;
+		width: 400px;
+		padding: 0px;
 	}
 
 	#parallax{
 		height: 480px !important;
-		width: 480px;
+		width: 100%;;
 		#para-header{
 			width: 400px !important;
 			margin: 40px auto 0px !important;
@@ -376,10 +380,11 @@
 		}
 	}
 	#contact{
-		width:480px;
+		//width:480px;
 		#contact-head-cont{
-			width: 400px;
-			padding: 0 25px;
+			//width: 400px;
+			//padding: 0 25px;
+			width: 100%;
 			.header1,.header2{
 				font-size: 17px;
 			}
@@ -392,6 +397,7 @@
 			};
 			img{
 				width: 100%;
+				margin: 0;
 			}
 		}
 		.col-md-4{
@@ -503,5 +509,65 @@
 		li{
 			width: 300px;
 		}
+	}
+}
+@media screen and (max-width:1036px) and (min-width:768px){
+	#title-cont{
+		ul{
+			margin: 50px;
+		}
+		.headline{
+			font-size: 40px;
+		}
+		#link1{
+			margin-top: 40px;
+		}
+	}
+	#head-next-image{
+		right: 40px;
+	}
+	#head-left-image{
+		left: 40px;
+	}
+	.clients-info{
+		width: 33.33%;
+		float: left;
+	}
+	#works-car-cont{
+		width: 1862px;
+		li{
+			width: 266px;
+		}
+	}
+	#about-info-cont{
+		width: 100%;
+	}
+	#office-carousel-cont{
+		width: 100%;
+		#office-carousel-cont{
+			width: 1383px;
+			img{
+				width: 33.33%;
+				height: 100%;
+			}
+		}
+	}
+	#car-holder{
+		width: 100%;
+		#testimonials-carousel{
+			width: 1383px;
+		}
+	}
+	.t-car-cont{
+		width: 33%;
+	}
+	#test-holder-np{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media screen and (max-width: 900px){
+	#nav-wrapper ul{
+		padding: 0px;
 	}
 }

@@ -4,11 +4,11 @@ jQuery(document).ready(function(){
 	var dotNum;
 
 	$('#test-holder-np').hover(function(){
-		$('#prev_image_test').animate({'opacity':'1','left':'30px'});
-		$('#next_image_test').animate({'opacity':'1','right':'30px'});
+		$('#prev_image_test').animate({'opacity':'1','left':'-30px'},1000);
+		$('#next_image_test').animate({'opacity':'1','right':'-30px'},1000);
 	},function(){
-		$('#prev_image_test').animate({'opacity':'0','left':'20px'});
-		$('#next_image_test').animate({'opacity':'0','right':'20px'});
+		$('#prev_image_test').animate({'opacity':'0','left':'-40px'},1000);
+		$('#next_image_test').animate({'opacity':'0','right':'-40px'},1000);
 	});
 
 	$('#dot-holder-test .dot').click(function(){

@@ -2,12 +2,12 @@ jQuery(document).ready(function(){
 	var counter = 0;
 	var dot;
 	var dotNum;
-	$('.sect-col-2:first-child').hover(function(){
-		$('#prev_image_studio').animate({'opacity':'1','left':'-15px'});
-		$('#next_image_studio').animate({'opacity':'1','right':'-15px'});
+	$('.col-lg-6 #office-carousel-cont').hover(function(){
+		$('#prev_image_studio').animate({'opacity':'1','left':'15px'});
+		$('#next_image_studio').animate({'opacity':'1','right':'15px'});
 	},function(){
-		$('#prev_image_studio').animate({'opacity':'0','left':'-20px'});
-		$('#next_image_studio').animate({'opacity':'0','right':'-20px'});
+		$('#prev_image_studio').animate({'opacity':'0','left':'0px'});
+		$('#next_image_studio').animate({'opacity':'0','right':'0px'});
 	});
 
 	$('#dot-holder .dot').click(function(){

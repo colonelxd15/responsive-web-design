@@ -65,8 +65,13 @@
 	}
 }
 #contact-head-cont{
-	width: 1180px;
+	//width: 1180px;
+	width: 100%;
 	margin: auto;
+	img{
+		width: 90%;
+		margin: 5%;
+	}
 }
 #map{
 	height: 500px;

@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
 	});
 
 	//END//
-	$('a').click(function(event){
+	$('.page-nav').click(function(event){
 		var section;
 		var scrollValue;
 		section = $(this).attr('href');

@@ -5,7 +5,6 @@ jQuery(document).ready(function(){
 		margin = parseInt($('#featured-slider').css('margin-left'));
 		marginMove = margin - 473;
 
-		console.log(margin);
 		 $('#featured-slider').animate({'margin-left':
             marginMove + 'px'}, 1000
             ,function(){

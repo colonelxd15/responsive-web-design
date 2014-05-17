@@ -1533,10 +1533,10 @@ $.magnificPopup.registerModule('zoom', {
 				el = mfp.st.zoom.opener(mfp.currItem.el || mfp.currItem);
 			}
 
-			var offset = el.offset();
+			//var offset = el.offset();
 			var paddingTop = parseInt(el.css('padding-top'),10);
 			var paddingBottom = parseInt(el.css('padding-bottom'),10);
-			offset.top -= ( $(window).scrollTop() - paddingTop );
+			el.offset().top -= ( $(window).scrollTop() - paddingTop );
 
 
 			/*

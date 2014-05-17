@@ -7,12 +7,16 @@
 		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
 		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="stylesheets/effects.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/magnific-popup.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		
      	<!--link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /-->
 		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="js/gmaps.js"></script>
 		<script src="js/counter.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js?v=0.9.9"></script>
 	</head>
 <body>
 
@@ -48,12 +52,12 @@
 
 	    <div class="navbar-collapse collapse" id="navbar-cont">
 	      <ul class="nav navbar-nav navbar-right">
-	        	<li><a href="#home-section">HOME</a></li>
-				<li><a href="#about-section">ABOUT</a></li>
-				<li><a href="#team-section">TEAM</a></li>
-				<li><a href="#services-section">SERVICES</a></li>
-				<li><a href="#portfolio-section">PORTFOLIO</a></li>
-				<li><a href="#contact-section">CONTACT</a></li>
+	        	<li><a class="page-nav" href="#home-section">HOME</a></li>
+				<li><a class="page-nav" href="#about-section">ABOUT</a></li>
+				<li><a class="page-nav" href="#team-section">TEAM</a></li>
+				<li><a class="page-nav" href="#services-section">SERVICES</a></li>
+				<li><a class="page-nav" href="#portfolio-section">PORTFOLIO</a></li>
+				<li><a class="page-nav" href="#contact-section">CONTACT</a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -129,6 +133,7 @@
 	<section class="container-fluid no-pad">
 		<div id="featured-slider-cont">
 		<section id="featured-slider">
+			<a href="resources/feat/feat-01.jpg">
 			<div class="featured-slider-image">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
@@ -140,6 +145,8 @@
 				<img src="resources/feat/feat-01.jpg">
 				<div class="featured-desc">YOUNG ECKLESS</div>
 			</div>
+			</a>
+			<a href="resources/feat/feat-02.jpg">
 			<div class="featured-slider-image">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
@@ -151,6 +158,8 @@
 				<img src="resources/feat/feat-02.jpg">
 				<div  class="featured-desc">SWEET HOME</div>
 			</div>
+			</a>
+			<a href="resources/feat/feat-03.jpg">
 			<div class="featured-slider-image">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
@@ -161,7 +170,9 @@
 			</div>
 				<img src="resources/feat/feat-03.jpg">
 				<div  class="featured-desc">DESK SHOP</div>
-			</div>		
+			</div>
+			</a>	
+			<a href="resources/feat/feat-04.jpg">	
 			<div class="featured-slider-image">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
@@ -173,6 +184,8 @@
 				<img src="resources/feat/feat-04.jpg">
 				<div class="featured-desc">MOTION REEL</div>
 			</div>
+			</a>
+			<a href="resources/feat/feat-05.jpg">
 			<div class="featured-slider-image">
 				<div class="image-overlay">
 				<div class="plus-icon"></div>
@@ -184,6 +197,7 @@
 				<img src="resources/feat/feat-05.jpg">
 				<div  class="featured-desc">SHUTTER ISLAND</div>
 			</div>
+			</a>
 			</section>
 			</div>
 	</section>
@@ -488,8 +502,8 @@
 				</div>
 				
 				<div class="container-fluid" id="test-holder-np">
-					<div class="prev visible-sm" id="prev_image_test"></div>
-					<div class="next visible-sm" id="next_image_test"></div>
+					<div class="prev" id="prev_image_test"></div>
+					<div class="next" id="next_image_test"></div>
 					<div id="car-holder">
 					<section id="testimonials-carousel">
 						<div class="t-car-cont">
@@ -553,11 +567,11 @@
 				<div class="container-fluid less-pad">
 				<div id="port-btn">
 					<ul id="port-btn-cont">
-						<li id="all" class="port-btn-prop">All</li>
-						<li id="graph" class="port-btn-prop">Graphic Design</li>
-						<li id="photo" class="port-btn-prop">Photography</li>
-						<li id="web" class="port-btn-prop">Website</li>
-						<li id="motion" class="port-btn-prop">Motion</li>
+						<li data-filter='' class="port-btn-prop">All</li>
+						<li data-filter='.graph' class="port-btn-prop">Graphic Design</li>
+						<li data-filter='.photo' class="port-btn-prop">Photography</li>
+						<li data-filter='.web' class="port-btn-prop">Website</li>
+						<li data-filter='.motion' class="port-btn-prop">Motion</li>
 					</ul>
 				</div>
 				</div>
@@ -581,7 +595,7 @@
 			</div>
 		</section>
 		<section class="container-fluid" id="port-img">
-			<div class="clients-info graphic">
+			<div class="clients-info graph">
 						<img src="resources/thumb/thumb-01.jpg">
 						<section>
 							<div></div>
@@ -597,7 +611,7 @@
 							<p class="client-text-2">PHOTOGRAPHY</p>
 						</section>
 					</div>
-					<div class="clients-info graphic motion">
+					<div class="clients-info graph motion">
 						<img src="resources/thumb/thumb-03.jpg">
 						<section>
 							<div></div>
@@ -605,7 +619,7 @@
 							<p class="client-text-2">GRAPHIC DESIGN</p>
 						</section>
 					</div>
-					<div class="clients-info graphic motion">
+					<div class="clients-info graph motion">
 						<img src="resources/thumb/thumb-04.jpg">
 						<section>
 							<div></div>
@@ -629,7 +643,7 @@
 							<p class="client-text-2">WEBSITE</p>
 						</section>
 					</div>
-					<div class="clients-info graphic">
+					<div class="clients-info graph">
 						<img src="resources/thumb/thumb-07.jpg">
 						<section>
 							<div></div>
@@ -645,7 +659,7 @@
 							<p class="client-text-2">PHOTOGRAPHY</p>
 						</section>
 					</div>
-					<div class="clients-info graphic motion">
+					<div class="clients-info graph motion">
 						<img src="resources/thumb/thumb-09.jpg">
 						<section>
 							<div></div>
@@ -653,7 +667,7 @@
 							<p class="client-text-2">GRAPHIC DESIGN</p>
 						</section>
 					</div>
-					<div class="clients-info graphic">
+					<div class="clients-info graph">
 						<img src="resources/thumb/thumb-10.jpg">
 						<section>
 							<div></div>
@@ -791,6 +805,7 @@
 	<script src="js/jquery.load.js"></script>
 	<script src="js/jquery.scroll.js"></script>
 	<script src="js/jquery.show-port.js"></script>
+	<script src="js/jquery.magnific-init.js"></script>
 	<script src="js/jquery.carousel-head.js"></script>
 	<script src="js/jquery.services-tooltip.js"></script>
 	<script src="js/jquery.headline.js"></script>

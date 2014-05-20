@@ -18,6 +18,12 @@
 	height: 700px;
 	width: 100%;
 	position: relative;
+	padding: 0px;
+	iframe{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 }
 #port-desc{
 	height: auto;
@@ -63,6 +69,13 @@
 		}
 				
 	}
+}
+.email-to{
+	margin-right: 10px;
+	float: left;
+}
+.email-owner{
+	float: left;
 }
 #contact-head-cont{
 	//width: 1180px;

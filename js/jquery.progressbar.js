@@ -2,8 +2,6 @@ jQuery(document).ready(function(){
 	
 	var scrollVal;
 	$('#w-60,#w-70,#w-80,#w-90,#w-100').css('width','');
-	
-
 	$(window).scroll(function(){
 		scrollVal  = $(window).scrollTop();
 		if(scrollVal >= ($('#testimonials').offset().top-350))

@@ -80,8 +80,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
 /* line 15, ../sass/screen/_headers.scss */
@@ -766,19 +766,19 @@ textarea {
   background: #4cddf3;
   color: #FFF;
 }
-/* line 231, ../sass/screen/_others.scss */
+/* line 232, ../sass/screen/_others.scss */
 #submit:hover {
   background: #F7F7F7;
   color: #4cddf3;
 }
 
 /************footer************/
-/* line 237, ../sass/screen/_others.scss */
+/* line 238, ../sass/screen/_others.scss */
 #footer {
   height: 201px;
 }
 
-/* line 240, ../sass/screen/_others.scss */
+/* line 241, ../sass/screen/_others.scss */
 #footer-icons {
   margin: auto;
   position: relative;
@@ -786,7 +786,7 @@ textarea {
   width: 213px;
   margin-top: 50px;
 }
-/* line 246, ../sass/screen/_others.scss */
+/* line 247, ../sass/screen/_others.scss */
 #footer-icons #foot-fb, #footer-icons #foot-tw, #footer-icons #foot-gplus {
   height: 51px;
   width: 51px;
@@ -794,55 +794,55 @@ textarea {
   margin: 10px;
   float: left;
 }
-/* line 252, ../sass/screen/_others.scss */
+/* line 253, ../sass/screen/_others.scss */
 #footer-icons #foot-fb:hover, #footer-icons #foot-tw:hover, #footer-icons #foot-gplus:hover {
   opacity: 0.7;
 }
-/* line 256, ../sass/screen/_others.scss */
+/* line 257, ../sass/screen/_others.scss */
 #footer-icons #foot-fb {
   background: url("../resources/icons/social-footer.png") -102px 0px;
 }
-/* line 259, ../sass/screen/_others.scss */
+/* line 260, ../sass/screen/_others.scss */
 #footer-icons #foot-tw {
   background: url("../resources/icons/social-footer.png") 0px 0px;
 }
-/* line 262, ../sass/screen/_others.scss */
+/* line 263, ../sass/screen/_others.scss */
 #footer-icons #foot-gplus {
   background: url("../resources/icons/social-footer.png") -51px 0px;
 }
 
 /*******icons***********/
-/* line 267, ../sass/screen/_others.scss */
+/* line 268, ../sass/screen/_others.scss */
 .tool {
   background: url("../resources/icons/sl-icons.png") 0px 0px #4cddf3;
 }
 
-/* line 270, ../sass/screen/_others.scss */
+/* line 271, ../sass/screen/_others.scss */
 .diamond {
   background: url("../resources/icons/sl-icons.png") -110px 0px #4cddf3;
 }
 
-/* line 273, ../sass/screen/_others.scss */
+/* line 274, ../sass/screen/_others.scss */
 .globe {
   background: url("../resources/icons/sl-icons.png") -220px 0px #4cddf3;
 }
 
-/* line 276, ../sass/screen/_others.scss */
+/* line 277, ../sass/screen/_others.scss */
 .pin {
   background: url("../resources/icons/sl-icons.png") -330px 0px #4cddf3;
 }
 
-/* line 279, ../sass/screen/_others.scss */
+/* line 280, ../sass/screen/_others.scss */
 .clock {
   background: url("../resources/icons/sl-icons.png") -440px 0px #4cddf3;
 }
 
-/* line 283, ../sass/screen/_others.scss */
+/* line 284, ../sass/screen/_others.scss */
 .tool:hover, .diamond:hover, .globe:hover, .pin:hover, .clock:hover {
   background-color: #E6E6E6;
 }
 
-/* line 287, ../sass/screen/_others.scss */
+/* line 288, ../sass/screen/_others.scss */
 .serv-tooltip {
   display: none;
   position: absolute;
@@ -856,7 +856,7 @@ textarea {
   margin-left: -110px;
   top: auto;
 }
-/* line 299, ../sass/screen/_others.scss */
+/* line 300, ../sass/screen/_others.scss */
 .serv-tooltip ul {
   color: #FFF;
   font-size: 14px;
@@ -865,7 +865,7 @@ textarea {
   font-family: 'Open Sans', sans-serif;
   line-height: 30px;
 }
-/* line 307, ../sass/screen/_others.scss */
+/* line 308, ../sass/screen/_others.scss */
 .serv-tooltip ul li span {
   height: 15px;
   width: 15px;
@@ -873,12 +873,12 @@ textarea {
   float: left;
   margin: 7px 7px -3px 0px;
 }
-/* line 314, ../sass/screen/_others.scss */
+/* line 315, ../sass/screen/_others.scss */
 .serv-tooltip ul li p {
   float: left;
 }
 
-/* line 322, ../sass/screen/_others.scss */
+/* line 323, ../sass/screen/_others.scss */
 .arrow-down {
   position: absolute;
   left: 50%;
@@ -892,13 +892,13 @@ textarea {
   border-top: 8px solid rgba(6, 6, 6, 0.85);
 }
 
-/* line 334, ../sass/screen/_others.scss */
+/* line 335, ../sass/screen/_others.scss */
 .notifications {
   width: 97%;
   margin: 20px auto 0;
   display: none;
 }
-/* line 338, ../sass/screen/_others.scss */
+/* line 339, ../sass/screen/_others.scss */
 .notifications strong {
   font-weight: bold;
 }
@@ -932,164 +932,182 @@ textarea {
   height: 700px;
   width: 100%;
   position: relative;
+  padding: 0px;
+}
+/* line 22, ../sass/screen/_holders.scss */
+#video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 22, ../sass/screen/_holders.scss */
+/* line 28, ../sass/screen/_holders.scss */
 #port-desc {
   height: auto;
   position: relative;
   display: none;
 }
 
-/* line 27, ../sass/screen/_holders.scss */
+/* line 33, ../sass/screen/_holders.scss */
 #portfolio-cont {
   padding: 50px 0px 85px 0px;
   position: relative;
   background: #f7f7f7;
 }
 
-/* line 32, ../sass/screen/_holders.scss */
+/* line 38, ../sass/screen/_holders.scss */
 #port-desc-holder {
   width: 500px;
   height: auto;
   margin: auto;
 }
-/* line 36, ../sass/screen/_holders.scss */
+/* line 42, ../sass/screen/_holders.scss */
 #port-desc-holder .img-zoomed {
   width: 300px;
   height: 300px;
   margin: 0 100px 30px;
 }
-/* line 41, ../sass/screen/_holders.scss */
+/* line 47, ../sass/screen/_holders.scss */
 #port-desc-holder .header2 {
   text-align: justify;
 }
 
-/* line 45, ../sass/screen/_holders.scss */
+/* line 51, ../sass/screen/_holders.scss */
 #feat-nav {
   width: 460px;
   height: 60px;
   margin: 30px auto 80px;
 }
 
-/* line 50, ../sass/screen/_holders.scss */
+/* line 56, ../sass/screen/_holders.scss */
 #test-holder-np {
   padding: 0px;
 }
 
-/* line 53, ../sass/screen/_holders.scss */
+/* line 59, ../sass/screen/_holders.scss */
 #contact {
   padding-bottom: 60px;
   margin: auto;
 }
-/* line 58, ../sass/screen/_holders.scss */
+/* line 64, ../sass/screen/_holders.scss */
 #contact span img {
   margin: 0px 5px 0px 0px;
 }
-/* line 61, ../sass/screen/_holders.scss */
+/* line 67, ../sass/screen/_holders.scss */
 #contact span img, #contact span p {
   float: left;
 }
 
-/* line 67, ../sass/screen/_holders.scss */
+/* line 73, ../sass/screen/_holders.scss */
+.email-to {
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 77, ../sass/screen/_holders.scss */
+.email-owner {
+  float: left;
+}
+
+/* line 80, ../sass/screen/_holders.scss */
 #contact-head-cont {
   width: 100%;
   margin: auto;
 }
-/* line 71, ../sass/screen/_holders.scss */
+/* line 84, ../sass/screen/_holders.scss */
 #contact-head-cont img {
   width: 90%;
   margin: 5%;
 }
 
-/* line 76, ../sass/screen/_holders.scss */
+/* line 89, ../sass/screen/_holders.scss */
 #map {
   height: 500px;
   position: relative;
   overflow: hidden;
 }
-/* line 80, ../sass/screen/_holders.scss */
+/* line 93, ../sass/screen/_holders.scss */
 #map #map-cont {
   position: relative;
   width: 100%;
   height: 500px;
 }
 
-/* line 87, ../sass/screen/_holders.scss */
+/* line 100, ../sass/screen/_holders.scss */
 .cont-bg {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 92, ../sass/screen/_holders.scss */
+/* line 105, ../sass/screen/_holders.scss */
 .cont-bg .cont-bg-2 {
   height: 40%;
   width: 80%;
   left: 10%;
   bottom: -40%;
 }
-/* line 98, ../sass/screen/_holders.scss */
+/* line 111, ../sass/screen/_holders.scss */
 .cont-bg .cont-bg-3 {
   height: 50%;
   width: 50%;
   left: 25%;
   bottom: -50%;
 }
-/* line 104, ../sass/screen/_holders.scss */
+/* line 117, ../sass/screen/_holders.scss */
 .cont-bg .cont-bg-2, .cont-bg .cont-bg-3 {
   position: absolute;
 }
-/* line 107, ../sass/screen/_holders.scss */
+/* line 120, ../sass/screen/_holders.scss */
 .cont-bg img {
   width: 100%;
   height: 100%;
 }
 
-/* line 112, ../sass/screen/_holders.scss */
+/* line 125, ../sass/screen/_holders.scss */
 .pos-abs {
   position: absolute;
   z-index: 100;
   width: 100%;
   top: 140px;
 }
-/* line 117, ../sass/screen/_holders.scss */
+/* line 130, ../sass/screen/_holders.scss */
 .pos-abs header.header1, .pos-abs header.header2 {
   color: #FFF;
 }
-/* line 120, ../sass/screen/_holders.scss */
+/* line 133, ../sass/screen/_holders.scss */
 .pos-abs .header1 {
   margin: 20px 0px;
 }
 
-/* line 125, ../sass/screen/_holders.scss */
+/* line 138, ../sass/screen/_holders.scss */
 #team {
   background: #f7f7f7;
   position: relative;
   padding: 50px 0px 85px;
 }
-/* line 129, ../sass/screen/_holders.scss */
+/* line 142, ../sass/screen/_holders.scss */
 #team .team-prof {
   width: 255px;
   height: 416px;
   margin: auto;
 }
-/* line 134, ../sass/screen/_holders.scss */
+/* line 147, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic,
 #team .team-prof .profile {
   position: relative;
 }
-/* line 137, ../sass/screen/_holders.scss */
+/* line 150, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic {
   height: 213px;
   width: 255px;
 }
-/* line 140, ../sass/screen/_holders.scss */
+/* line 153, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic img {
   height: 100%;
   width: 100%;
 }
-/* line 144, ../sass/screen/_holders.scss */
+/* line 157, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic .team-prof-overlay {
   height: 213px;
   width: 255px;
@@ -1098,7 +1116,7 @@ textarea {
   position: absolute;
   top: 0;
 }
-/* line 151, ../sass/screen/_holders.scss */
+/* line 164, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic .team-prof-overlay .email {
   background-repeat: no-repeat;
   background: url("../resources/icons/color-icons.png") 0px -44px;
@@ -1107,7 +1125,7 @@ textarea {
   top: 0px;
   left: 103px;
 }
-/* line 159, ../sass/screen/_holders.scss */
+/* line 172, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic .team-prof-overlay .email-add {
   font-family: 'Open Sans',sans-serif;
   font-size: 15px;
@@ -1118,36 +1136,36 @@ textarea {
   text-align: center;
   width: 100%;
 }
-/* line 169, ../sass/screen/_holders.scss */
+/* line 182, ../sass/screen/_holders.scss */
 #team .team-prof .team-prof-pic .team-prof-overlay img, #team .team-prof .team-prof-pic .team-prof-overlay .email, #team .team-prof .team-prof-pic .team-prof-overlay .email-add {
   position: absolute;
 }
-/* line 175, ../sass/screen/_holders.scss */
+/* line 188, ../sass/screen/_holders.scss */
 #team .team-prof .profile {
   background: #FFF;
   padding-top: 30px;
   width: 255px;
   height: 192px;
 }
-/* line 180, ../sass/screen/_holders.scss */
+/* line 193, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social {
   height: 25px;
   width: 115px;
   margin: 20px auto;
 }
-/* line 185, ../sass/screen/_holders.scss */
+/* line 198, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social .social-fb {
   background: url("../resources/icons/social.png") 0 0;
 }
-/* line 188, ../sass/screen/_holders.scss */
+/* line 201, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social .social-tw {
   background: url("../resources/icons/social.png") -25px 0px;
 }
-/* line 191, ../sass/screen/_holders.scss */
+/* line 204, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social .social-tu {
   background: url("../resources/icons/social.png") -75px 0px;
 }
-/* line 194, ../sass/screen/_holders.scss */
+/* line 207, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social .social-fb, #team .team-prof .profile .social .social-tw, #team .team-prof .profile .social .social-tu {
   background-repeat: no-repeat;
   height: 25px;
@@ -1155,11 +1173,11 @@ textarea {
   margin-right: 20px;
   float: left;
 }
-/* line 200, ../sass/screen/_holders.scss */
+/* line 213, ../sass/screen/_holders.scss */
 #team .team-prof .profile .social .social-fb:last-child, #team .team-prof .profile .social .social-tw:last-child, #team .team-prof .profile .social .social-tu:last-child {
   margin: 0px;
 }
-/* line 207, ../sass/screen/_holders.scss */
+/* line 220, ../sass/screen/_holders.scss */
 #team .team-prof:hover .team-prof-overlay {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1168,7 +1186,7 @@ textarea {
   transition: all 0.2s ease-out;
   opacity: 0.85;
 }
-/* line 210, ../sass/screen/_holders.scss */
+/* line 223, ../sass/screen/_holders.scss */
 #team .team-prof:hover .team-prof-overlay .email {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1177,7 +1195,7 @@ textarea {
   transition: all 0.2s ease-out;
   top: 75px;
 }
-/* line 214, ../sass/screen/_holders.scss */
+/* line 227, ../sass/screen/_holders.scss */
 #team .team-prof:hover .team-prof-overlay .email-add {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1186,7 +1204,7 @@ textarea {
   transition: all 0.2s ease-out;
   bottom: 65px;
 }
-/* line 219, ../sass/screen/_holders.scss */
+/* line 232, ../sass/screen/_holders.scss */
 #team .team-prof:hover .profile {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1195,25 +1213,25 @@ textarea {
   transition: all 0.2s ease-out;
   background: #4cddf3;
 }
-/* line 222, ../sass/screen/_holders.scss */
+/* line 235, ../sass/screen/_holders.scss */
 #team .team-prof:hover .profile .header5 {
   color: #FFF;
 }
-/* line 225, ../sass/screen/_holders.scss */
+/* line 238, ../sass/screen/_holders.scss */
 #team .team-prof:hover .profile .separator {
   background: #FFF;
 }
 
-/* line 233, ../sass/screen/_holders.scss */
+/* line 246, ../sass/screen/_holders.scss */
 #facts {
   background: #FFF;
   padding: 50px 0px;
 }
-/* line 236, ../sass/screen/_holders.scss */
+/* line 249, ../sass/screen/_holders.scss */
 #facts .header7 {
   margin: 30px auto;
 }
-/* line 239, ../sass/screen/_holders.scss */
+/* line 252, ../sass/screen/_holders.scss */
 #facts .facts-desc {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -1224,27 +1242,27 @@ textarea {
   padding: 20px 0 100px;
 }
 
-/* line 249, ../sass/screen/_holders.scss */
+/* line 262, ../sass/screen/_holders.scss */
 #tweet {
   background: url("../resources/icons/facts.png") 0 0 #4cddf3;
 }
 
-/* line 252, ../sass/screen/_holders.scss */
+/* line 265, ../sass/screen/_holders.scss */
 #client {
   background: url("../resources/icons/facts.png") -73px 0px #4cddf3;
 }
 
-/* line 255, ../sass/screen/_holders.scss */
+/* line 268, ../sass/screen/_holders.scss */
 #project {
   background: url("../resources/icons/facts.png") -146px 0px #4cddf3;
 }
 
-/* line 258, ../sass/screen/_holders.scss */
+/* line 271, ../sass/screen/_holders.scss */
 #coffee {
   background: url("../resources/icons/facts.png") -219px 0px #4cddf3;
 }
 
-/* line 264, ../sass/screen/_holders.scss */
+/* line 277, ../sass/screen/_holders.scss */
 #tweet,
 #client,
 #project,
@@ -1254,26 +1272,26 @@ textarea {
   margin: auto;
 }
 
-/* line 270, ../sass/screen/_holders.scss */
+/* line 283, ../sass/screen/_holders.scss */
 #parallax {
   background: url("../resources/parallax/parallax-02.png") #4cddf3;
   position: relative;
   overflow: hidden;
   height: 625px;
 }
-/* line 275, ../sass/screen/_holders.scss */
+/* line 288, ../sass/screen/_holders.scss */
 #parallax #para-header {
   height: 200px;
   width: 480px;
   margin: 120px auto 50px auto;
 }
-/* line 280, ../sass/screen/_holders.scss */
+/* line 293, ../sass/screen/_holders.scss */
 #parallax #parallax-bg {
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-/* line 285, ../sass/screen/_holders.scss */
+/* line 298, ../sass/screen/_holders.scss */
 #parallax #parallax-bg #parallax-layer-1 {
   width: 90%;
   height: 50%;
@@ -1281,19 +1299,19 @@ textarea {
   bottom: -50%;
   left: 5%;
 }
-/* line 291, ../sass/screen/_holders.scss */
+/* line 304, ../sass/screen/_holders.scss */
 #parallax #parallax-bg #parallax-layer-1 img {
   width: 100%;
   height: 100%;
 }
 
-/* line 299, ../sass/screen/_holders.scss */
+/* line 312, ../sass/screen/_holders.scss */
 #services {
   padding: 50px 0px 85px;
   background: #f7f7f7;
 }
 
-/* line 303, ../sass/screen/_holders.scss */
+/* line 316, ../sass/screen/_holders.scss */
 .circle {
   height: 110px;
   width: 110px;
@@ -1301,19 +1319,19 @@ textarea {
   margin: 10px auto 30px;
 }
 
-/* line 310, ../sass/screen/_holders.scss */
+/* line 323, ../sass/screen/_holders.scss */
 .clients-info {
   position: relative;
   float: left;
   height: 200px;
   width: 258px;
 }
-/* line 315, ../sass/screen/_holders.scss */
+/* line 328, ../sass/screen/_holders.scss */
 .clients-info img {
   width: 100%;
   height: 100%;
 }
-/* line 319, ../sass/screen/_holders.scss */
+/* line 332, ../sass/screen/_holders.scss */
 .clients-info section {
   height: 100%;
   width: 100%;
@@ -1323,23 +1341,23 @@ textarea {
   background: rgba(76, 221, 243, 0.85);
   top: 0;
 }
-/* line 328, ../sass/screen/_holders.scss */
+/* line 341, ../sass/screen/_holders.scss */
 .clients-info section div {
   background: url("../resources/icons/color-icons.png") -44px 0 no-repeat;
   height: 44px;
   width: 44px;
   margin: auto;
 }
-/* line 334, ../sass/screen/_holders.scss */
+/* line 347, ../sass/screen/_holders.scss */
 .clients-info section .client-text-1 {
   margin-top: 30px;
 }
-/* line 338, ../sass/screen/_holders.scss */
+/* line 351, ../sass/screen/_holders.scss */
 .clients-info section .client-text-1,
 .clients-info section .client-text-2 {
   text-align: center;
 }
-/* line 342, ../sass/screen/_holders.scss */
+/* line 355, ../sass/screen/_holders.scss */
 .clients-info:hover {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -1347,18 +1365,18 @@ textarea {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-/* line 344, ../sass/screen/_holders.scss */
+/* line 357, ../sass/screen/_holders.scss */
 .clients-info:hover section {
   opacity: 1;
 }
 
-/* line 351, ../sass/screen/_holders.scss */
+/* line 364, ../sass/screen/_holders.scss */
 #port-btn {
   height: 30px;
   width: 600px;
   margin: 0px auto 70px auto;
 }
-/* line 356, ../sass/screen/_holders.scss */
+/* line 369, ../sass/screen/_holders.scss */
 #port-btn #port-btn-cont .port-btn-prop {
   line-height: 32px;
   margin: 0 5px 10px;
@@ -1368,24 +1386,24 @@ textarea {
   float: left;
   border-radius: 3px;
 }
-/* line 364, ../sass/screen/_holders.scss */
+/* line 377, ../sass/screen/_holders.scss */
 #port-btn #port-btn-cont .port-btn-prop:hover {
   background: #4cddf3;
   color: #FFF;
 }
 
-/* line 371, ../sass/screen/_holders.scss */
+/* line 384, ../sass/screen/_holders.scss */
 #port-img {
   padding: 0px;
   overflow: hidden;
 }
 
-/* line 375, ../sass/screen/_holders.scss */
+/* line 388, ../sass/screen/_holders.scss */
 #works-car-view {
   overflow: hidden;
 }
 
-/* line 378, ../sass/screen/_holders.scss */
+/* line 391, ../sass/screen/_holders.scss */
 #works-car-cont {
   height: 100px;
   width: 2240px;
@@ -1393,12 +1411,12 @@ textarea {
   float: left;
   margin-top: 85px;
 }
-/* line 384, ../sass/screen/_holders.scss */
+/* line 397, ../sass/screen/_holders.scss */
 #works-car-cont li {
   float: left;
   width: 320px;
 }
-/* line 387, ../sass/screen/_holders.scss */
+/* line 400, ../sass/screen/_holders.scss */
 #works-car-cont li img {
   width: 100%;
   height: 100%;

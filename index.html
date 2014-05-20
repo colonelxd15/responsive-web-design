@@ -17,6 +17,7 @@
 		<script src="js/counter.js"></script>
 		<script src="js/jquery.isotope.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js?v=0.9.9"></script>
+		<script src="js/jquery.lazyload.min.js"></script>
 	</head>
 <body>
 
@@ -47,7 +48,8 @@
 	        <img src="resources/icons/menu-icon-blk.png">
           </button>
 	        
-	      <a class="navbar-brand" href="#">Solido</a>
+	      <a class="navbar-brand" href="#">
+	      	<img src="resources/icons/solido.png">Solido</a>
 	    </div>
 
 	    <div class="navbar-collapse collapse" id="navbar-cont">
@@ -133,8 +135,8 @@
 	<section class="container-fluid no-pad">
 		<div id="featured-slider-cont">
 		<section id="featured-slider">
-			<a href="resources/feat/feat-01.jpg">
 			<div class="featured-slider-image">
+			<a href="resources/feat/feat-01.jpg">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
 					<div class="featured-meta">
@@ -144,10 +146,11 @@
 				</div>
 				<img src="resources/feat/feat-01.jpg">
 				<div class="featured-desc">YOUNG ECKLESS</div>
-			</div>
 			</a>
+			</div>
+			
+			<div class="featured-slider-image">
 			<a href="resources/feat/feat-02.jpg">
-			<div class="featured-slider-image">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
 					<div class="featured-meta">
@@ -155,12 +158,13 @@
 					<p>PHOTOGRAPHY</p>
 				</div>
 			</div>
-				<img src="resources/feat/feat-02.jpg">
+				<img class="lazy" data-original="resources/feat/feat-02.jpg">
 				<div  class="featured-desc">SWEET HOME</div>
-			</div>
 			</a>
-			<a href="resources/feat/feat-03.jpg">
+			</div>
+						
 			<div class="featured-slider-image">
+				<a href="resources/feat/feat-03.jpg">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
 					<div class="featured-meta">
@@ -168,12 +172,13 @@
 					<p>PHOTOGRAPHY</p>
 				</div>
 			</div>
-				<img src="resources/feat/feat-03.jpg">
+				<img class="lazy" data-original="resources/feat/feat-03.jpg">
 				<div  class="featured-desc">DESK SHOP</div>
+				</a>	
 			</div>
-			</a>	
-			<a href="resources/feat/feat-04.jpg">	
+				
 			<div class="featured-slider-image">
+			<a href="resources/feat/feat-04.jpg">
 				<div class="image-overlay">
 					<div class="plus-icon"></div>
 					<div class="featured-meta">
@@ -181,12 +186,13 @@
 					<p>PHOTOGRAPHY</p>
 				</div>
 			</div>
-				<img src="resources/feat/feat-04.jpg">
+				<img class="lazy" data-original="resources/feat/feat-04.jpg">
 				<div class="featured-desc">MOTION REEL</div>
-			</div>
 			</a>
-			<a href="resources/feat/feat-05.jpg">
+			</div>
+			
 			<div class="featured-slider-image">
+			<a href="resources/feat/feat-05.jpg">
 				<div class="image-overlay">
 				<div class="plus-icon"></div>
 				<div class="featured-meta">
@@ -194,10 +200,11 @@
 				<p>PHOTOGRAPHY</p>
 			</div>
 			</div>
-				<img src="resources/feat/feat-05.jpg">
+				<img class="lazy" data-original="resources/feat/feat-05.jpg">
 				<div  class="featured-desc">SHUTTER ISLAND</div>
-			</div>
 			</a>
+			</div>
+			
 			</section>
 			</div>
 	</section>
@@ -212,9 +219,9 @@
 				<header class="header3">Amazing Studio</header>
 				<div id="office-carousel-cont">
 					<div id="office-carousel">
-						<img src="resources/carousel/caroussel-01.jpg">
-						<img src="resources/carousel/caroussel-02.jpg">
-						<img src="resources/carousel/caroussel-03.jpg">
+						<img class="lazy" data-original="resources/carousel/caroussel-01.jpg">
+						<img class="lazy" data-original="resources/carousel/caroussel-02.jpg">
+						<img class="lazy" data-original="resources/carousel/caroussel-03.jpg">
 					</div>
 					<div id="dot-holder" class="dot-cont">
 						<div class="dot" id="present"></div>
@@ -260,7 +267,7 @@
 			<div class="col-lg-3 col-md-6 col-sm-6">		
 			<div class="team-prof">
 			<div class="team-prof-pic">
-				<img src="resources/team/team-01.jpg">
+				<img class="lazy" data-original="resources/team/team-01.jpg">
 				<div class="team-prof-overlay">
 					<div class="email"></div>
 					<p class="email-add">JOHN @SOLIDO.COM</p>
@@ -281,7 +288,7 @@
 		<div class="col-lg-3 col-md-6 col-sm-6">
 			<div class="team-prof">
 			<div class="team-prof-pic">
-				<img src="resources/team/team-02.jpg">
+				<img class="lazy" data-original="resources/team/team-02.jpg">
 				<div class="team-prof-overlay">
 					<div class="email"></div>
 					<p class="email-add">LIA@SOLIDO.COM</p>
@@ -302,7 +309,7 @@
 		<div class="col-lg-3 col-md-6 col-sm-6">
 			<div class="team-prof">
 				<div class="team-prof-pic">
-				<img src="resources/team/team-03.jpg">
+				<img class="lazy" data-original="resources/team/team-03.jpg">
 				<div class="team-prof-overlay">
 					<div class="email"></div>
 					<p class="email-add">DIEGO@SOLIDO.COM</p>
@@ -323,7 +330,7 @@
 		<div class="col-lg-3 col-md-6 col-sm-6">
 			<div class="team-prof">
 				<div class="team-prof-pic">
-					<img src="resources/team/team-04.jpg">
+					<img class="lazy" data-original="resources/team/team-04.jpg">
 					<div class="team-prof-overlay">		
 						<div class="email"></div>
 						<p class="email-add">ELISA@SOLIDO.COM</p>
@@ -554,7 +561,11 @@
 		</div>
 	</section>
 	<section id="video" class="container-fluid overlay">
-		
+		<video id="" loop autoplay>
+			<source src="">
+			<source src="">
+			<source src="">
+		</video>
 	</section>
 	<section class="container-fluid" id="portfolio-cont">
 		<div class="container">
@@ -596,7 +607,7 @@
 		</section>
 		<section class="container-fluid" id="port-img">
 			<div class="clients-info graph">
-						<img src="resources/thumb/thumb-01.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-01.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">KALLO</p>
@@ -604,7 +615,7 @@
 						</section>
 					</div>
 					<div class="clients-info photo">
-						<img src="resources/thumb/thumb-02.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-02.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">THE INSIDE</p>
@@ -620,7 +631,7 @@
 						</section>
 					</div>
 					<div class="clients-info graph motion">
-						<img src="resources/thumb/thumb-04.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-04.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">FASHION BRAND</p>
@@ -628,7 +639,7 @@
 						</section>
 					</div>
 					<div class="clients-info web">
-						<img src="resources/thumb/thumb-05.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-05.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">THE CHOP SHOP</p>
@@ -636,7 +647,7 @@
 						</section>
 					</div>
 					<div class="clients-info web motion">
-						<img src="resources/thumb/thumb-06.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-06.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">PREGO</p>
@@ -644,7 +655,7 @@
 						</section>
 					</div>
 					<div class="clients-info graph">
-						<img src="resources/thumb/thumb-07.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-07.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">BEHURS</p>
@@ -652,7 +663,7 @@
 						</section>
 					</div>
 					<div class="clients-info photo">
-						<img src="resources/thumb/thumb-08.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-08.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">THE NEW GIRL</p>
@@ -660,7 +671,7 @@
 						</section>
 					</div>
 					<div class="clients-info graph motion">
-						<img src="resources/thumb/thumb-09.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-09.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">SHUT UP & SHOOT</p>
@@ -668,7 +679,7 @@
 						</section>
 					</div>
 					<div class="clients-info graph">
-						<img src="resources/thumb/thumb-10.jpg">
+						<img class="lazy" data-original="resources/thumb/thumb-10.jpg">
 						<section>
 							<div></div>
 							<p class="client-text-1">KULISHA 79000</p>
@@ -693,7 +704,7 @@
 	<section id="contact" class="container-fluid">
 		<div class="row">
 			<div id="contact-head-cont" class="container">
-				<img src="resources/contact/imac.png">
+				<img class="lazy" data-original="resources/contact/imac.png">
 				<p class="header1 head1-pad-nt">CONTACT</p>
 				<div class="separator"></div>
 				<p class="header2 head2-pad-fb">We like to create things with fun, like-minded people. Feel free to say hello!</p>
@@ -801,7 +812,7 @@
 	</section>
 	
 	<script src="js/jquery.navbar.js"></script>
-	
+	<script src="js/jquery.lazy-load.js"></script>
 	<script src="js/jquery.load.js"></script>
 	<script src="js/jquery.scroll.js"></script>
 	<script src="js/jquery.show-port.js"></script>
@@ -817,6 +828,7 @@
 	<script src="js/jquery.portfolio.js"></script>
 	<script src="js/jquery.portfolio-car.js"></script>
 	<script src="js/jquery.map.js"></script>
+	<script src="js/jquery.parallax.js"></script>
 	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
 	
 </body>

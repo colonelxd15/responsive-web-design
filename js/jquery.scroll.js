@@ -47,25 +47,25 @@ jQuery(document).ready(function(){
 			scrollValue = '#contact';
 		}
 			
-		$('html,body').animate({scrollTop: $(scrollValue).offset().top},1000);
+		$('html,body').animate({scrollTop: ($(scrollValue).offset().top -75)},1000);
 	});	
 	//END//
 	function activePage()
 	{
-		if(scrollVal<=($('#about-section').offset().top-350))
+		if(scrollVal<=($('#featured-works').offset().top - 350))
 		{
 			$('#navbar-cont li a').css('color','#414141');
 			$('#navbar-cont li a[href="#home-section"]').css('color','#B3D4FC');
 		}
-		else if(scrollVal<=($('#about-section').offset()))
+		else if(scrollVal<=($('#team').offset().top -350))
 		{
 			$('#navbar-cont li a').css('color','#414141');
 			$('#navbar-cont li a[href="#about-section"]').css('color','#B3D4FC');
 		}
-		// else if(scrollVal<=4873){
-		// 	$('#navbar-cont li a').css('color','#414141');
-		// 	$('#navbar-cont li a[href="#team-section"]').css('color','#B3D4FC');
-		// }
+		else if(scrollVal<=($('#services').offset().top-350)){
+			$('#navbar-cont li a').css('color','#414141');
+			$('#navbar-cont li a[href="#team-section"]').css('color','#B3D4FC');
+		}
 		else if(scrollVal<=($('#portfolio-cont').offset().top-350))
 		{
 			$('#navbar-cont li a').css('color','#414141');

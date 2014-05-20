@@ -9,7 +9,15 @@
 		border: none !important;
 		min-height: 75px !important;
 	}
+	.navbar-default{
+		box-shadow: none;
+	}
 	.navbar-header{
+		padding-left: 40px;
+		a img{
+			margin-right: 10px;
+			width: 25px;
+		}
 		.navbar-toggle{
 			float: right;
 			height: 75px !important;
@@ -28,11 +36,15 @@
 		}
 		.navbar-brand{
 			padding-top: 25px !important;
+
 		}
 	}
 	ul{
 		padding: 0px 75px 0 0;
 		margin-top: 12px !important;
+		li a:hover{
+			color: #B3D4FC !important;
+		}
 	}
 }
 #port-desc{

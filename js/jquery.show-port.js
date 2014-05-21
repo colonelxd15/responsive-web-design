@@ -2,8 +2,8 @@ jQuery(document).ready(function(){
 	var index;
 
 	$('.clients-info').click(function(){
-		index = $(this).index();
-		index = index + 1;
+		index = $(this).attr('data-filter');
+		//index = index + 1;
 		$('#port-desc-cont').load('portfolio-subpages/portfolio-' + index + '.html');
 		$('#port-desc').css('display','block');
 		$('html,body').animate({scrollTop: $('#port-desc').offset().top-150},1000);
